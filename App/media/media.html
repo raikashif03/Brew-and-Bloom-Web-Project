@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Brew &amp; Bloom menu and cafe media. Explore our artisanal roasts, botanical culinary treats, auditory ambiances, and craft brew mechanics.">
+  <title>Menu &amp; Cafe Media — Brew &amp; Bloom</title>
+
+  <!-- Web Fonts & Material Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+   <!-- Site Header & Navigation Bar  -->
+  <header id="site-header">
+    <div class="site-container">
+      <div class="header-inner">
+
+        <a class="brand-logo" href="index.html" aria-label="Brew &amp; Bloom Home">
+          <svg class="brand-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="1.6" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 2a4.5 4.5 0 0 0-4.5 4.5c0 3 4.5 5.5 4.5 5.5s4.5-2.5 4.5-5.5A4.5 4.5 0 0 0 12 2z"></path>
+            <path d="M12 22a4.5 4.5 0 0 1-4.5-4.5c0-3 4.5-5.5 4.5-5.5s4.5 2.5 4.5 5.5A4.5 4.5 0 0 1 12 22z"></path>
+            <path d="M2 12a4.5 4.5 0 0 0 4.5 4.5c3 0 5.5-4.5 5.5-4.5s-2.5-4.5-5.5-4.5A4.5 4.5 0 0 0 2 12z"></path>
+            <path d="M22 12a4.5 4.5 0 0 1-4.5 4.5c-3 0-5.5-4.5-5.5-4.5s2.5-4.5 5.5-4.5A4.5 4.5 0 0 1 22 12z"></path>
+          </svg>
+          <span class="brand-name">Brew &amp; Bloom</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link active" aria-current="page" href="media.html">Media</a>
+          <a class="nav-link" href="register.html">Register</a>
+          <a class="nav-link" href="services.html">Services</a>
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+          <a class="nav-link" href="contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="account-btn" type="button" aria-label="User account">
+            <span class="material-symbols-outlined">person</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Bar -->
+    <nav class="mobile-nav-strip" aria-label="Mobile Navigation">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link active" aria-current="page" href="media.html">Media</a>
+      <a class="nav-link" href="register.html">Register</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="portfolio.html">Portfolio</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- 1. Media Hero Banner -->
+    <section id="media-hero">
+      <div class="site-container">
+        <div class="hero-box">
+          <span class="hero-pill">
+            <span class="material-symbols-outlined">local_cafe</span>
+            Sensory Sanctuary
+          </span>
+          <h1 class="hero-title">Menu &amp; Cafe Media</h1>
+          <p class="hero-desc">
+            Explore our artisanal roasts, botanical culinary treats, auditory ambiances, and craft brew mechanics.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Audio Ambiance Section -->
+    <section id="audio-section">
+      <div class="site-container">
+        <div class="audio-box">
+
+          <div class="audio-info">
+            <div class="audio-disc">
+              <span class="material-symbols-outlined">graphic_eq</span>
+            </div>
+            <div>
+              <span class="audio-tag">Our Cafe Playlist</span>
+              <h2 class="audio-title">Morning Mellow Acoustic Jazz</h2>
+              <p class="audio-sub">Curated vinyl selection playing live in the main courtyard</p>
+            </div>
+          </div>
+
+          <div class="audio-controls">
+            <div class="audio-button-row">
+              <span id="audio-current-time">01:42</span>
+              <div class="audio-btns">
+                <button class="audio-btn" type="button" aria-label="Previous track">
+                  <span class="material-symbols-outlined">skip_previous</span>
+                </button>
+                <button class="play-toggle-btn" id="audio-play-btn" type="button" aria-label="Play or pause audio">
+                  <span class="material-symbols-outlined" id="audio-icon">pause</span>
+                </button>
+                <button class="audio-btn" type="button" aria-label="Next track">
+                  <span class="material-symbols-outlined">skip_next</span>
+                </button>
+              </div>
+              <span>04:18</span>
+            </div>
+
+            <div class="progress-track" aria-label="Audio progress scrubber">
+              <div class="progress-fill"></div>
+            </div>
+
+            <div class="audio-volume-row">
+              <span class="material-symbols-outlined">volume_up</span>
+              <div class="volume-bar">
+                <div class="volume-fill"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Video Player & Image Showcase -->
+    <section id="media-showcase">
+      <div class="site-container">
+        <div class="showcase-grid">
+
+          <!-- Video Showcase Card -->
+          <div class="video-card">
+            <div class="video-frame">
+              <img class="video-thumb" src="assets/images/media-pour-over.png"
+                alt="Slow pour-over brew process in action">
+              <div class="video-overlay">
+                <button class="video-play-btn" type="button" aria-label="Watch how we brew video">
+                  <span class="material-symbols-outlined">play_arrow</span>
+                </button>
+                <span class="video-overlay-text">Watch how we brew</span>
+              </div>
+              <div class="video-bottom-bar">
+                <div class="video-bar-left">
+                  <span class="material-symbols-outlined">play_arrow</span>
+                  <span>00:00 / 03:45</span>
+                </div>
+                <div class="video-bar-right">
+                  <span class="material-symbols-outlined">subtitles</span>
+                  <span class="material-symbols-outlined">settings</span>
+                  <span class="material-symbols-outlined">fullscreen</span>
+                </div>
+              </div>
+            </div>
+            <div class="video-caption-body">
+              <span class="card-tag">Behind the Counter</span>
+              <h3 class="card-title">The Alchemy of Pure Roasts</h3>
+              <p class="card-text">
+                Step into our morning routine as our head roaster balances grind size, mineral water density, and pour
+                speed to unlock sweet jasmine and bergamot floral notes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Photographic Figure Card -->
+          <figure class="figure-card">
+            <div class="figure-frame">
+              <img class="figure-img" src="assets/images/media-cold-brew.png" alt="Signature morning pour-over ritual">
+            </div>
+            <figcaption class="figure-caption-body">
+              <div class="figure-tag">
+                <span class="material-symbols-outlined">verified</span>
+                <span>Figure 1.1: Our signature morning pour-over ritual</span>
+              </div>
+              <p class="card-text">
+                Each batch is ground immediately prior to service using burrs calibrated down to the micrometer,
+                ensuring complete clarity and zero astringency.
+              </p>
+            </figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
