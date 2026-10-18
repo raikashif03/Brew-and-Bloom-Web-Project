@@ -17,7 +17,7 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     rel="stylesheet">
 
-  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="register.css">
 </head>
 
 <body>
@@ -258,3 +258,154 @@
             </fieldset>
 
           
+            <!-- SECTION 2: PALATE & VISITATION DETAILS -->
+            <fieldset class="form-section-block">
+              <legend class="form-legend">
+                <span class="legend-badge">2</span>
+                Palate &amp; Visitation Details
+              </legend>
+
+              <div class="form-grid-3">
+                <!-- 5. Date of Birth -->
+                <div class="form-group">
+                  <div class="field-label-row">
+                    <label for="dob">Date of Birth</label>
+                    <span class="field-tag">Birthday roasts</span>
+                  </div>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon-left">cake</span>
+                    <input class="input-control" id="dob" name="dob" type="date" value="1995-04-18">
+                  </div>
+                </div>
+
+                <!-- 6. Website / Social Link -->
+                <div class="form-group">
+                  <div class="field-label-row">
+                    <label for="socialLink">Website / Social</label>
+                    <span class="field-tag">Portfolio link</span>
+                  </div>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon-left">link</span>
+                    <input class="input-control" id="socialLink" name="socialLink"
+                      placeholder="https://instagram.com/julian_thorne" type="url">
+                  </div>
+                </div>
+
+                <!-- 7. Favourite Colour Picker -->
+                <div class="form-group">
+                  <div class="field-label-row">
+                    <label for="favColor">Palette Colour</label>
+                    <span class="field-tag">Bespoke cup</span>
+                  </div>
+                  <div class="color-picker-box">
+                    <input class="color-input-btn" id="favColor" name="favColor" type="color" value="#C68642"
+                      oninput="document.getElementById('colorHexLabel').textContent = this.value.toUpperCase(); document.getElementById('colorPreviewDot').style.backgroundColor = this.value;">
+                    <div class="color-info">
+                      <span class="color-dot" id="colorPreviewDot"></span>
+                      <span class="color-code" id="colorHexLabel">#C68642</span>
+                    </div>
+                    <span class="color-name">Caramel Tan</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-grid-2" style="margin-top: 18px;">
+                <!-- 8. Cups of Coffee per Week -->
+                <div class="form-group">
+                  <div class="field-label-row">
+                    <label for="coffeePerWeek">Cups of coffee per week</label>
+                    <span class="field-tag">Min: 1 · Max: 50</span>
+                  </div>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon-left">coffee_maker</span>
+                    <input class="input-control" id="coffeePerWeek" max="50" min="1" name="coffeePerWeek" type="number"
+                      value="7">
+                  </div>
+                </div>
+
+                <!-- 9. Preferred Visit Time -->
+                <div class="form-group">
+                  <div class="field-label-row">
+                    <label for="visitTime">Preferred visit time</label>
+                    <span class="field-tag">Golden hour</span>
+                  </div>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon-left">schedule</span>
+                    <input class="input-control" id="visitTime" name="visitTime" type="time" value="09:30">
+                  </div>
+                </div>
+              </div>
+
+              <!-- 10. Energy Spectrum (Range Slider) -->
+              <div class="slider-container">
+                <div class="slider-label-row">
+                  <label for="moodSlider">
+                    <span class="material-symbols-outlined">sentiment_very_satisfied</span>
+                    Morning State &amp; Energy Spectrum:
+                  </label>
+                  <span class="slider-badge" id="moodLevelDisplay">78% Zen</span>
+                </div>
+                <input class="range-input" id="moodSlider" max="100" min="0" name="moodSlider" type="range" value="78"
+                  oninput="document.getElementById('moodLevelDisplay').textContent = this.value + '% ' + (this.value > 50 ? 'Zen' : 'Groggy');">
+                <div class="range-marks">
+                  <span>Sleepy</span>
+                  <span>Balanced Roast</span>
+                  <span>Caffeinated &amp; Zen</span>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- SECTION 3: CRAFT SELECTIONS & BIO -->
+            <fieldset class="form-section-block">
+              <legend class="form-legend">
+                <span class="legend-badge">3</span>
+                Bespoke Palate &amp; Narrative
+              </legend>
+
+              <div class="form-group" style="margin-bottom: 18px;">
+                <!-- 11. Favourite Drink Select -->
+                <label for="favouriteDrink" style="font-size: 14px; font-weight: 600; color: #271310;">Signature House
+                  Drink</label>
+                <div class="select-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">local_cafe</span>
+                  <select class="select-control" id="favouriteDrink" name="favouriteDrink">
+                    <option value="Single-Origin Pour-Over">Single-Origin Pour-Over (Ethiopia Yirgacheffe)</option>
+                    <option selected value="Lavender Honey Cardamom Latte">Lavender Honey Cardamom Latte (Barista
+                      Signature)</option>
+                    <option value="Kyoto Cold Drip">Kyoto 16-Hour Slow Cold Drip</option>
+                    <option value="Smoked Vanilla Macchiato">Smoked Madagascar Vanilla Macchiato</option>
+                    <option value="Wild Chamomile Tonic">Wild Chamomile Botanical Sparkling Tonic</option>
+                  </select>
+                  <span class="material-symbols-outlined select-arrow">unfold_more</span>
+                </div>
+              </div>
+
+              <!-- 12. About You (Textarea) -->
+              <div class="form-group" style="margin-bottom: 18px;">
+                <div class="field-label-row">
+                  <label for="aboutYou">About your morning ritual</label>
+                  <span class="field-tag">3-5 sentences</span>
+                </div>
+                <textarea class="textarea-control" id="aboutYou" name="aboutYou"
+                  placeholder="Tell us how you enjoy your morning brew, favorite book accompaniment, or record spinning..."
+                  rows="3">I enjoy natural process African roasts paired with quiet morning essays and natural skylight before the city stirs.</textarea>
+              </div>
+
+              <!-- 13. Profile Photo Dropzone -->
+              <div class="form-group">
+                <label style="font-size: 14px; font-weight: 600; color: #271310;">Upload Member Profile Photo</label>
+                <div class="file-dropzone">
+                  <input accept="image/*" class="file-input-hidden" id="profilePhoto" name="profilePhoto" type="file">
+                  <div class="dropzone-inner">
+                    <div class="dropzone-icon">
+                      <span class="material-symbols-outlined">add_photo_alternate</span>
+                    </div>
+                    <p class="dropzone-text">
+                      Drop portrait here or <span>browse files</span>
+                    </p>
+                    <p class="dropzone-hint">PNG, JPG, or WEBP up to 5MB (Square botanical portraits preferred)</p>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
