@@ -27,25 +27,29 @@
     <div class="site-container">
       <div class="header-inner">
 
-        <a class="brand-logo" href="index.html" aria-label="Brew &amp; Bloom Home">
-          <svg class="brand-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-            stroke-width="1.6" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="3"></circle>
-            <path d="M12 2a4.5 4.5 0 0 0-4.5 4.5c0 3 4.5 5.5 4.5 5.5s4.5-2.5 4.5-5.5A4.5 4.5 0 0 0 12 2z"></path>
-            <path d="M12 22a4.5 4.5 0 0 1-4.5-4.5c0-3 4.5-5.5 4.5-5.5s4.5 2.5 4.5 5.5A4.5 4.5 0 0 1 12 22z"></path>
-            <path d="M2 12a4.5 4.5 0 0 0 4.5 4.5c3 0 5.5-4.5 5.5-4.5s-2.5-4.5-5.5-4.5A4.5 4.5 0 0 0 2 12z"></path>
-            <path d="M22 12a4.5 4.5 0 0 1-4.5 4.5c-3 0-5.5-4.5-5.5-4.5s2.5-4.5 5.5-4.5A4.5 4.5 0 0 1 22 12z"></path>
-          </svg>
+        <a class="brand-logo" href="../home/home.html" aria-label="Brew &amp; Bloom Home">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor">
+  <circle cx="12" cy="3.8" r="1.6"></circle>
+  <circle cx="15.1" cy="5.6" r="1.6"></circle>
+  <circle cx="15.1" cy="9.2" r="1.6"></circle>
+  <circle cx="12" cy="11" r="1.6"></circle>
+  <circle cx="8.9" cy="9.2" r="1.6"></circle>
+  <circle cx="8.9" cy="5.6" r="1.6"></circle>
+  <circle cx="12" cy="7.4" r="1.4" fill="none" stroke="currentColor" stroke-width="1.3"></circle>
+  <path d="M11.6 18.2C11.6 18.2 8.2 17.4 5.8 14.5C4.1 12.5 4.6 9.8 4.6 9.8C4.6 9.8 7.3 10.2 9.9 12.7C11.1 14 11.6 15.9 11.6 18.2Z"></path>
+  <path d="M12.4 18.2C12.4 18.2 15.8 17.4 18.2 14.5C19.9 12.5 19.4 9.8 19.4 9.8C19.4 9.8 16.7 10.2 14.1 12.7C12.9 14 12.4 15.9 12.4 18.2Z"></path>
+</svg>
+
           <span class="brand-name">Brew &amp; Bloom</span>
         </a>
 
         <nav class="desktop-nav" aria-label="Main Navigation">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="media.html">Media</a>
-          <a class="nav-link active" aria-current="page" href="register.html">Register</a>
-          <a class="nav-link" href="services.html">Services</a>
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link" href="../home/home.html">Home</a>
+          <a class="nav-link" href="../media/media.html">Media</a>
+          <a class="nav-link active" aria-current="page" href="../register/register.html">Register</a>
+          <a class="nav-link" href="../../services.html">Services</a>
+          <a class="nav-link" href="../../portfolio.html">Portfolio</a>
+          <a class="nav-link" href="../../contact.html">Contact</a>
         </nav>
 
         <div class="header-actions">
@@ -58,18 +62,18 @@
 
     <!-- Mobile Navigation Bar -->
     <nav class="mobile-nav-strip" aria-label="Mobile Navigation">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="media.html">Media</a>
-      <a class="nav-link active" aria-current="page" href="register.html">Register</a>
-      <a class="nav-link" href="services.html">Services</a>
-      <a class="nav-link" href="portfolio.html">Portfolio</a>
-      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="nav-link" href="../home/home.html">Home</a>
+      <a class="nav-link" href="../media/media.html">Media</a>
+      <a class="nav-link active" aria-current="page" href="../register/register.html">Register</a>
+      <a class="nav-link" href="../../services.html">Services</a>
+      <a class="nav-link" href="../../portfolio.html">Portfolio</a>
+      <a class="nav-link" href="../../contact.html">Contact</a>
     </nav>
   </header>
 
   <main id="main-content">
 
-\    <section id="reg-hero">
+    <section id="reg-hero">
       <div class="site-container">
         <div class="reg-hero-box">
 
@@ -178,351 +182,348 @@
             </div>
           </div>
 
+          <form id="coffeeClubForm" novalidate>
 
-            <!-- SECTION 1: CREDENTIALS & IDENTITY -->
-            <fieldset class="form-section-block">
-              <legend class="form-legend">
-                <span class="legend-badge">1</span>
-                Profile &amp; Security Credentials
-              </legend>
+          <!-- SECTION 1: CREDENTIALS & IDENTITY -->
+          <fieldset class="form-section-block">
+            <legend class="form-legend">
+              <span class="legend-badge">1</span>
+              Profile &amp; Security Credentials
+            </legend>
 
-              <div class="form-grid-2">
+            <div class="form-grid-2">
               <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="fullName">Full Name <span class="mandatory-star">*</span></label>
-                    <span class="field-tag">Legal or preferred</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">person</span>
-                    <input class="input-control" id="fullName" name="fullName" placeholder="Julian Thorne" required
-                      type="text">
-                  </div>
-                </div>
-
-\                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="username">Username <span class="mandatory-star">*</span></label>
-                    <span class="field-tag-active">Active Focus Demo</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">alternate_email</span>
-                    <input class="input-control focus-demo" id="username" maxlength="16" minlength="4" name="username"
-                      type="text" value="julian_roasts">
-                  </div>
-                  <div class="field-hint">
-                    <span>Between 4-16 characters</span>
-                    <span>13 / 16 chars</span>
-                  </div>
-                </div>
-
-                <!-- 3. Email (Valid State Demo) -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="email">Email Address <span class="mandatory-star">*</span></label>
-                    <span class="field-tag-valid">Verified Valid</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">mail</span>
-                    <input class="input-control valid-demo" id="email" name="email" required type="email"
-                      value="julian.thorne@botanicalcoffee.co">
-                    <span class="material-symbols-outlined input-icon-right valid-icon">check_circle</span>
-                  </div>
-                  <div class="field-hint-valid">
-                    <span class="material-symbols-outlined">verified</span>
-                    <span>Valid email format &amp; available for membership</span>
-                  </div>
-                </div>
-
-                <!-- 4. Password -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="password">Password <span class="mandatory-star">*</span></label>
-                    <span class="field-tag">Min 8 characters</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">lock</span>
-                    <input class="input-control" id="password" minlength="8" name="password" required type="password"
-                      value="CinnamonLavender#9">
-                    <button class="toggle-pass-btn" type="button" aria-label="Toggle password view"
-                      onclick="const p = document.getElementById('password'); p.type = p.type === 'password' ? 'text' : 'password';">
-                      <span class="material-symbols-outlined">visibility</span>
-                    </button>
-                  </div>
-                  <div class="pass-strength-bar">
-                    <div class="pass-strength-fill"></div>
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-
-          
-            <!-- SECTION 2: PALATE & VISITATION DETAILS -->
-            <fieldset class="form-section-block">
-              <legend class="form-legend">
-                <span class="legend-badge">2</span>
-                Palate &amp; Visitation Details
-              </legend>
-
-              <div class="form-grid-3">
-                <!-- 5. Date of Birth -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="dob">Date of Birth</label>
-                    <span class="field-tag">Birthday roasts</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">cake</span>
-                    <input class="input-control" id="dob" name="dob" type="date" value="1995-04-18">
-                  </div>
-                </div>
-
-                <!-- 6. Website / Social Link -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="socialLink">Website / Social</label>
-                    <span class="field-tag">Portfolio link</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">link</span>
-                    <input class="input-control" id="socialLink" name="socialLink"
-                      placeholder="https://instagram.com/julian_thorne" type="url">
-                  </div>
-                </div>
-
-                <!-- 7. Favourite Colour Picker -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="favColor">Palette Colour</label>
-                    <span class="field-tag">Bespoke cup</span>
-                  </div>
-                  <div class="color-picker-box">
-                    <input class="color-input-btn" id="favColor" name="favColor" type="color" value="#C68642"
-                      oninput="document.getElementById('colorHexLabel').textContent = this.value.toUpperCase(); document.getElementById('colorPreviewDot').style.backgroundColor = this.value;">
-                    <div class="color-info">
-                      <span class="color-dot" id="colorPreviewDot"></span>
-                      <span class="color-code" id="colorHexLabel">#C68642</span>
-                    </div>
-                    <span class="color-name">Caramel Tan</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-grid-2" style="margin-top: 18px;">
-                <!-- 8. Cups of Coffee per Week -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="coffeePerWeek">Cups of coffee per week</label>
-                    <span class="field-tag">Min: 1 · Max: 50</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">coffee_maker</span>
-                    <input class="input-control" id="coffeePerWeek" max="50" min="1" name="coffeePerWeek" type="number"
-                      value="7">
-                  </div>
-                </div>
-
-                <!-- 9. Preferred Visit Time -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="visitTime">Preferred visit time</label>
-                    <span class="field-tag">Golden hour</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">schedule</span>
-                    <input class="input-control" id="visitTime" name="visitTime" type="time" value="09:30">
-                  </div>
-                </div>
-              </div>
-
-              <!-- 10. Energy Spectrum (Range Slider) -->
-              <div class="slider-container">
-                <div class="slider-label-row">
-                  <label for="moodSlider">
-                    <span class="material-symbols-outlined">sentiment_very_satisfied</span>
-                    Morning State &amp; Energy Spectrum:
-                  </label>
-                  <span class="slider-badge" id="moodLevelDisplay">78% Zen</span>
-                </div>
-                <input class="range-input" id="moodSlider" max="100" min="0" name="moodSlider" type="range" value="78"
-                  oninput="document.getElementById('moodLevelDisplay').textContent = this.value + '% ' + (this.value > 50 ? 'Zen' : 'Groggy');">
-                <div class="range-marks">
-                  <span>Sleepy</span>
-                  <span>Balanced Roast</span>
-                  <span>Caffeinated &amp; Zen</span>
-                </div>
-              </div>
-            </fieldset>
-
-            <!-- SECTION 3: CRAFT SELECTIONS & BIO -->
-            <fieldset class="form-section-block">
-              <legend class="form-legend">
-                <span class="legend-badge">3</span>
-                Bespoke Palate &amp; Narrative
-              </legend>
-
-              <div class="form-group" style="margin-bottom: 18px;">
-                <!-- 11. Favourite Drink Select -->
-                <label for="favouriteDrink" style="font-size: 14px; font-weight: 600; color: #271310;">Signature House
-                  Drink</label>
-                <div class="select-wrapper">
-                  <span class="material-symbols-outlined input-icon-left">local_cafe</span>
-                  <select class="select-control" id="favouriteDrink" name="favouriteDrink">
-                    <option value="Single-Origin Pour-Over">Single-Origin Pour-Over (Ethiopia Yirgacheffe)</option>
-                    <option selected value="Lavender Honey Cardamom Latte">Lavender Honey Cardamom Latte (Barista
-                      Signature)</option>
-                    <option value="Kyoto Cold Drip">Kyoto 16-Hour Slow Cold Drip</option>
-                    <option value="Smoked Vanilla Macchiato">Smoked Madagascar Vanilla Macchiato</option>
-                    <option value="Wild Chamomile Tonic">Wild Chamomile Botanical Sparkling Tonic</option>
-                  </select>
-                  <span class="material-symbols-outlined select-arrow">unfold_more</span>
-                </div>
-              </div>
-
-              <!-- 12. About You (Textarea) -->
-              <div class="form-group" style="margin-bottom: 18px;">
                 <div class="field-label-row">
-                  <label for="aboutYou">About your morning ritual</label>
-                  <span class="field-tag">3-5 sentences</span>
+                  <label for="fullName">Full Name <span class="mandatory-star">*</span></label>
+                  <span class="field-tag">Legal or preferred</span>
                 </div>
-                <textarea class="textarea-control" id="aboutYou" name="aboutYou"
-                  placeholder="Tell us how you enjoy your morning brew, favorite book accompaniment, or record spinning..."
-                  rows="3">I enjoy natural process African roasts paired with quiet morning essays and natural skylight before the city stirs.</textarea>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">person</span>
+                  <input class="input-control" id="fullName" name="fullName" placeholder="Julian Thorne" required
+                    type="text">
+                </div>
               </div>
 
-              <!-- 13. Profile Photo Dropzone -->
               <div class="form-group">
-                <label style="font-size: 14px; font-weight: 600; color: #271310;">Upload Member Profile Photo</label>
-                <div class="file-dropzone">
-                  <input accept="image/*" class="file-input-hidden" id="profilePhoto" name="profilePhoto" type="file">
-                  <div class="dropzone-inner">
-                    <div class="dropzone-icon">
-                      <span class="material-symbols-outlined">add_photo_alternate</span>
-                    </div>
-                    <p class="dropzone-text">
-                      Drop portrait here or <span>browse files</span>
-                    </p>
-                    <p class="dropzone-hint">PNG, JPG, or WEBP up to 5MB (Square botanical portraits preferred)</p>
-                  </div>
+                <div class="field-label-row">
+                  <label for="username">Username <span class="mandatory-star">*</span></label>
+                  <span class="field-tag-active">Active Focus Demo</span>
+                </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">alternate_email</span>
+                  <input class="input-control focus-demo" id="username" maxlength="16" minlength="4" name="username"
+                    type="text" value="julian_roasts">
+                </div>
+                <div class="field-hint">
+                  <span>Between 4-16 characters</span>
+                  <span>13 / 16 chars</span>
                 </div>
               </div>
-            </fieldset>
 
-
-            <!-- SECTION 4: DEMOGRAPHICS & INTERESTS -->
-            <fieldset class="form-section-block">
-              <legend class="form-legend">
-                <span class="legend-badge">4</span>
-                Preferences &amp; Demographics
-              </legend>
-
-              <div class="choice-box-container">
-                <!-- 14. Gender Identity  -->
-                <div>
-                  <span class="choice-group-title">Gender Identity</span>
-                  <div class="choice-list">
-                    <label class="choice-item">
-                      <input name="gender" type="radio" value="Female">
-                      <span>Female</span>
-                    </label>
-                    <label class="choice-item">
-                      <input name="gender" type="radio" value="Male">
-                      <span>Male</span>
-                    </label>
-                    <label class="choice-item">
-                      <input checked name="gender" type="radio" value="Non-binary">
-                      <span style="font-weight: 600; color: #885210;">Non-binary (Selected)</span>
-                    </label>
-                    <label class="choice-item">
-                      <input name="gender" type="radio" value="Prefer not to say">
-                      <span>Prefer not to say</span>
-                    </label>
-                  </div>
+              <!-- 3. Email (Valid State Demo) -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="email">Email Address <span class="mandatory-star">*</span></label>
+                  <span class="field-tag-valid">Verified Valid</span>
                 </div>
-
-                <!-- 15. Artisanal  (Checkboxes) -->
-                <div>
-                  <span class="choice-group-title">Artisanal Interests</span>
-                  <div class="choice-list">
-                    <label class="choice-item">
-                      <input checked name="interests" type="checkbox" value="Coffee">
-                      <span style="font-weight: 600;">Coffee &amp; Roastery</span>
-                    </label>
-                    <label class="choice-item">
-                      <input name="interests" type="checkbox" value="Tea">
-                      <span>Herbal Infusions &amp; Rare Tea</span>
-                    </label>
-                    <label class="choice-item">
-                      <input checked name="interests" type="checkbox" value="Desserts">
-                      <span style="font-weight: 600;">Pastries &amp; Botanical Desserts</span>
-                    </label>
-                    <label class="choice-item">
-                      <input name="interests" type="checkbox" value="Events">
-                      <span>Floral Arrangement &amp; Acoustic Evenings</span>
-                    </label>
-                  </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">mail</span>
+                  <input class="input-control valid-demo" id="email" name="email" required type="email"
+                    value="julian.thorne@botanicalcoffee.co">
+                  <span class="material-symbols-outlined input-icon-right valid-icon">check_circle</span>
+                </div>
+                <div class="field-hint-valid">
+                  <span class="material-symbols-outlined">verified</span>
+                  <span>Valid email format &amp; available for membership</span>
                 </div>
               </div>
-            </fieldset>
 
-            <!-- SECTION 5: SYSTEM STATE FIELDS -->
-            <fieldset class="form-section-block">
-              <legend class="form-legend">
-                <span class="legend-badge">5</span>
-                System Generation Data
-              </legend>
-
-              <div class="form-grid-2">
-                <!-- 16. Read-only field -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="membershipTier">Membership Tier</label>
-                    <span class="field-tag">Read-only</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">workspace_premium</span>
-                    <input class="input-control" id="membershipTier" name="membershipTier" readonly type="text"
-                      value="Standard Connoisseur (Free)">
-                  </div>
+              <!-- 4. Password -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="password">Password <span class="mandatory-star">*</span></label>
+                  <span class="field-tag">Min 8 characters</span>
                 </div>
-
-                <!-- 17. Disabled field -->
-                <div class="form-group">
-                  <div class="field-label-row">
-                    <label for="memberId">Auto Member ID</label>
-                    <span class="field-tag">Disabled</span>
-                  </div>
-                  <div class="input-wrapper">
-                    <span class="material-symbols-outlined input-icon-left">badge</span>
-                    <input class="input-control" disabled id="memberId" name="memberId" type="text"
-                      value="BB-9402-AUTO">
-                  </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">lock</span>
+                  <input class="input-control" id="password" minlength="8" name="password" required type="password"
+                    value="CinnamonLavender#9">
+                  <button class="toggle-pass-btn" type="button" aria-label="Toggle password view">
+                    <span class="material-symbols-outlined">visibility</span>
+                  </button>
+                </div>
+                <div class="pass-strength-bar">
+                  <div class="pass-strength-fill"></div>
                 </div>
               </div>
-            </fieldset>
+            </div>
+          </fieldset>
 
-            <!-- 18. Terms and Conditions Checkbox -->
-            <div class="terms-card">
-              <label class="terms-label">
-                <input id="termsCheck" name="terms" required type="checkbox">
-                <span>
-                  I agree to the <a href="#terms">Brew &amp; Bloom Coffee Club terms</a> and <a href="#privacy">privacy
-                    policy</a>. I consent to receive occasional invites and bean dispatch notes. <span
-                    class="mandatory-star">*</span>
-                </span>
-              </label>
+
+          <!-- SECTION 2: PALATE & VISITATION DETAILS -->
+          <fieldset class="form-section-block">
+            <legend class="form-legend">
+              <span class="legend-badge">2</span>
+              Palate &amp; Visitation Details
+            </legend>
+
+            <div class="form-grid-3">
+              <!-- 5. Date of Birth -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="dob">Date of Birth</label>
+                  <span class="field-tag">Birthday roasts</span>
+                </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">cake</span>
+                  <input class="input-control" id="dob" name="dob" type="date" value="1995-04-18">
+                </div>
+              </div>
+
+              <!-- 6. Website / Social Link -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="socialLink">Website / Social</label>
+                  <span class="field-tag">Portfolio link</span>
+                </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">link</span>
+                  <input class="input-control" id="socialLink" name="socialLink"
+                    placeholder="https://instagram.com/julian_thorne" type="url">
+                </div>
+              </div>
+
+              <!-- 7. Favourite Colour Picker -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="favColor">Palette Colour</label>
+                  <span class="field-tag">Bespoke cup</span>
+                </div>
+                <div class="color-picker-box">
+                  <input class="color-input-btn" id="favColor" name="favColor" type="color" value="#C68642">
+                  <div class="color-info">
+                    <span class="color-dot" id="colorPreviewDot"></span>
+                    <span class="color-code" id="colorHexLabel">#C68642</span>
+                  </div>
+                  <span class="color-name">Caramel Tan</span>
+                </div>
+              </div>
             </div>
 
-            <!-- 19. Action Buttons -->
-            <div class="form-buttons-row">
-              <button class="btn-reset" type="reset">
-                <span class="material-symbols-outlined">restart_alt</span>
-                <span>Reset Form</span>
-              </button>
-              <button class="btn-submit" type="submit">
-                <span>Create Membership</span>
-                <span class="material-symbols-outlined">arrow_forward</span>
-              </button>
+            <div class="form-grid-2" style="margin-top: 18px;">
+              <!-- 8. Cups of Coffee per Week -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="coffeePerWeek">Cups of coffee per week</label>
+                  <span class="field-tag">Min: 1 · Max: 50</span>
+                </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">coffee_maker</span>
+                  <input class="input-control" id="coffeePerWeek" max="50" min="1" name="coffeePerWeek" type="number"
+                    value="7">
+                </div>
+              </div>
+
+              <!-- 9. Preferred Visit Time -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="visitTime">Preferred visit time</label>
+                  <span class="field-tag">Golden hour</span>
+                </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">schedule</span>
+                  <input class="input-control" id="visitTime" name="visitTime" type="time" value="09:30">
+                </div>
+              </div>
             </div>
+
+            <!-- 10. Energy Spectrum (Range Slider) -->
+            <div class="slider-container">
+              <div class="slider-label-row">
+                <label for="moodSlider">
+                  <span class="material-symbols-outlined">sentiment_very_satisfied</span>
+                  Morning State &amp; Energy Spectrum:
+                </label>
+                <span class="slider-badge" id="moodLevelDisplay">78% Zen</span>
+              </div>
+              <input class="range-input" id="moodSlider" max="100" min="0" name="moodSlider" type="range" value="78">
+              <div class="range-marks">
+                <span>Sleepy</span>
+                <span>Balanced Roast</span>
+                <span>Caffeinated &amp; Zen</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- SECTION 3: CRAFT SELECTIONS & BIO -->
+          <fieldset class="form-section-block">
+            <legend class="form-legend">
+              <span class="legend-badge">3</span>
+              Bespoke Palate &amp; Narrative
+            </legend>
+
+            <div class="form-group" style="margin-bottom: 18px;">
+              <!-- 11. Favourite Drink Select -->
+              <label for="favouriteDrink" style="font-size: 14px; font-weight: 600; color: #271310;">Signature House
+                Drink</label>
+              <div class="select-wrapper">
+                <span class="material-symbols-outlined input-icon-left">local_cafe</span>
+                <select class="select-control" id="favouriteDrink" name="favouriteDrink">
+                  <option value="Single-Origin Pour-Over">Single-Origin Pour-Over (Ethiopia Yirgacheffe)</option>
+                  <option selected value="Lavender Honey Cardamom Latte">Lavender Honey Cardamom Latte (Barista
+                    Signature)</option>
+                  <option value="Kyoto Cold Drip">Kyoto 16-Hour Slow Cold Drip</option>
+                  <option value="Smoked Vanilla Macchiato">Smoked Madagascar Vanilla Macchiato</option>
+                  <option value="Wild Chamomile Tonic">Wild Chamomile Botanical Sparkling Tonic</option>
+                </select>
+                <span class="material-symbols-outlined select-arrow">unfold_more</span>
+              </div>
+            </div>
+
+            <!-- 12. About You (Textarea) -->
+            <div class="form-group" style="margin-bottom: 18px;">
+              <div class="field-label-row">
+                <label for="aboutYou">About your morning ritual</label>
+                <span class="field-tag">3-5 sentences</span>
+              </div>
+              <textarea class="textarea-control" id="aboutYou" name="aboutYou"
+                placeholder="Tell us how you enjoy your morning brew, favorite book accompaniment, or record spinning..."
+                rows="3">I enjoy natural process African roasts paired with quiet morning essays and natural skylight before the city stirs.</textarea>
+            </div>
+
+            <!-- 13. Profile Photo Dropzone -->
+            <div class="form-group">
+              <label style="font-size: 14px; font-weight: 600; color: #271310;">Upload Member Profile Photo</label>
+              <div class="file-dropzone">
+                <input accept="image/*" class="file-input-hidden" id="profilePhoto" name="profilePhoto" type="file">
+                <div class="dropzone-inner">
+                  <div class="dropzone-icon">
+                    <span class="material-symbols-outlined">add_photo_alternate</span>
+                  </div>
+                  <p class="dropzone-text">
+                    Drop portrait here or <span>browse files</span>
+                  </p>
+                  <p class="dropzone-hint">PNG, JPG, or WEBP up to 5MB (Square botanical portraits preferred)</p>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+
+          <!-- SECTION 4: DEMOGRAPHICS & INTERESTS -->
+          <fieldset class="form-section-block">
+            <legend class="form-legend">
+              <span class="legend-badge">4</span>
+              Preferences &amp; Demographics
+            </legend>
+
+            <div class="choice-box-container">
+              <!-- 14. Gender Identity  -->
+              <div>
+                <span class="choice-group-title">Gender Identity</span>
+                <div class="choice-list">
+                  <label class="choice-item">
+                    <input name="gender" type="radio" value="Female">
+                    <span>Female</span>
+                  </label>
+                  <label class="choice-item">
+                    <input name="gender" type="radio" value="Male">
+                    <span>Male</span>
+                  </label>
+                  <label class="choice-item">
+                    <input checked name="gender" type="radio" value="Non-binary">
+                    <span style="font-weight: 600; color: #885210;">Non-binary (Selected)</span>
+                  </label>
+                  <label class="choice-item">
+                    <input name="gender" type="radio" value="Prefer not to say">
+                    <span>Prefer not to say</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 15. Artisanal  (Checkboxes) -->
+              <div>
+                <span class="choice-group-title">Artisanal Interests</span>
+                <div class="choice-list">
+                  <label class="choice-item">
+                    <input checked name="interests" type="checkbox" value="Coffee">
+                    <span style="font-weight: 600;">Coffee &amp; Roastery</span>
+                  </label>
+                  <label class="choice-item">
+                    <input name="interests" type="checkbox" value="Tea">
+                    <span>Herbal Infusions &amp; Rare Tea</span>
+                  </label>
+                  <label class="choice-item">
+                    <input checked name="interests" type="checkbox" value="Desserts">
+                    <span style="font-weight: 600;">Pastries &amp; Botanical Desserts</span>
+                  </label>
+                  <label class="choice-item">
+                    <input name="interests" type="checkbox" value="Events">
+                    <span>Floral Arrangement &amp; Acoustic Evenings</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- SECTION 5: SYSTEM STATE FIELDS -->
+          <fieldset class="form-section-block">
+            <legend class="form-legend">
+              <span class="legend-badge">5</span>
+              System Generation Data
+            </legend>
+
+            <div class="form-grid-2">
+              <!-- 16. Read-only field -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="membershipTier">Membership Tier</label>
+                  <span class="field-tag">Read-only</span>
+                </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">workspace_premium</span>
+                  <input class="input-control" id="membershipTier" name="membershipTier" readonly type="text"
+                    value="Standard Connoisseur (Free)">
+                </div>
+              </div>
+
+              <!-- 17. Disabled field -->
+              <div class="form-group">
+                <div class="field-label-row">
+                  <label for="memberId">Auto Member ID</label>
+                  <span class="field-tag">Disabled</span>
+                </div>
+                <div class="input-wrapper">
+                  <span class="material-symbols-outlined input-icon-left">badge</span>
+                  <input class="input-control" disabled id="memberId" name="memberId" type="text" value="BB-9402-AUTO">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- 18. Terms and Conditions Checkbox -->
+          <div class="terms-card">
+            <label class="terms-label">
+              <input id="termsCheck" name="terms" required type="checkbox">
+              <span>
+                I agree to the <a href="#terms">Brew &amp; Bloom Coffee Club terms</a> and <a href="#privacy">privacy
+                  policy</a>. I consent to receive occasional invites and bean dispatch notes. <span
+                  class="mandatory-star">*</span>
+              </span>
+            </label>
+          </div>
+
+          <!-- 19. Action Buttons -->
+          <div class="form-buttons-row">
+            <button class="btn-reset" type="reset">
+              <span class="material-symbols-outlined">restart_alt</span>
+              <span>Reset Form</span>
+            </button>
+            <button class="btn-submit" type="submit">
+              <span>Create Membership</span>
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </button>
+          </div>
 
           </form>
 
@@ -598,9 +599,9 @@
         <div class="footer-col footer-col-info">
           <h4 class="footer-heading">Specialty Offerings</h4>
           <ul class="footer-links-list">
-            <li><a href="media.html">Single Origin Pour-Overs</a></li>
-            <li><a href="services.html">Seasonal Floral Subscriptions</a></li>
-            <li><a href="services.html">Private Botanical Workshops</a></li>
+            <li><a href="../media/media.html">Single Origin Pour-Overs</a></li>
+            <li><a href="../../services.html">Seasonal Floral Subscriptions</a></li>
+            <li><a href="../../services.html">Private Botanical Workshops</a></li>
           </ul>
         </div>
 

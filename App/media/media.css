@@ -18,6 +18,7 @@ body {
   line-height: 1.5;
   color: #1f1b13;
   background-color: #fff8f2;
+  cursor: default;
   overflow-x: hidden;
 }
 
@@ -697,6 +698,7 @@ input {
   line-height: 22px;
   color: #504442;
 }
+
 .figure-frame {
   width: 100%;
   aspect-ratio: 16 / 9;
