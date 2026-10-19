@@ -178,8 +178,6 @@
             </div>
           </div>
 
-          <form id="coffeeClubForm" novalidate
-            onsubmit="event.preventDefault(); document.getElementById('successToast').classList.remove('hidden');">
 
             <!-- SECTION 1: CREDENTIALS & IDENTITY -->
             <fieldset class="form-section-block">
@@ -189,7 +187,7 @@
               </legend>
 
               <div class="form-grid-2">
-\                <div class="form-group">
+              <div class="form-group">
                   <div class="field-label-row">
                     <label for="fullName">Full Name <span class="mandatory-star">*</span></label>
                     <span class="field-tag">Legal or preferred</span>
@@ -409,3 +407,214 @@
               </div>
             </fieldset>
 
+
+            <!-- SECTION 4: DEMOGRAPHICS & INTERESTS -->
+            <fieldset class="form-section-block">
+              <legend class="form-legend">
+                <span class="legend-badge">4</span>
+                Preferences &amp; Demographics
+              </legend>
+
+              <div class="choice-box-container">
+                <!-- 14. Gender Identity  -->
+                <div>
+                  <span class="choice-group-title">Gender Identity</span>
+                  <div class="choice-list">
+                    <label class="choice-item">
+                      <input name="gender" type="radio" value="Female">
+                      <span>Female</span>
+                    </label>
+                    <label class="choice-item">
+                      <input name="gender" type="radio" value="Male">
+                      <span>Male</span>
+                    </label>
+                    <label class="choice-item">
+                      <input checked name="gender" type="radio" value="Non-binary">
+                      <span style="font-weight: 600; color: #885210;">Non-binary (Selected)</span>
+                    </label>
+                    <label class="choice-item">
+                      <input name="gender" type="radio" value="Prefer not to say">
+                      <span>Prefer not to say</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- 15. Artisanal  (Checkboxes) -->
+                <div>
+                  <span class="choice-group-title">Artisanal Interests</span>
+                  <div class="choice-list">
+                    <label class="choice-item">
+                      <input checked name="interests" type="checkbox" value="Coffee">
+                      <span style="font-weight: 600;">Coffee &amp; Roastery</span>
+                    </label>
+                    <label class="choice-item">
+                      <input name="interests" type="checkbox" value="Tea">
+                      <span>Herbal Infusions &amp; Rare Tea</span>
+                    </label>
+                    <label class="choice-item">
+                      <input checked name="interests" type="checkbox" value="Desserts">
+                      <span style="font-weight: 600;">Pastries &amp; Botanical Desserts</span>
+                    </label>
+                    <label class="choice-item">
+                      <input name="interests" type="checkbox" value="Events">
+                      <span>Floral Arrangement &amp; Acoustic Evenings</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- SECTION 5: SYSTEM STATE FIELDS -->
+            <fieldset class="form-section-block">
+              <legend class="form-legend">
+                <span class="legend-badge">5</span>
+                System Generation Data
+              </legend>
+
+              <div class="form-grid-2">
+                <!-- 16. Read-only field -->
+                <div class="form-group">
+                  <div class="field-label-row">
+                    <label for="membershipTier">Membership Tier</label>
+                    <span class="field-tag">Read-only</span>
+                  </div>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon-left">workspace_premium</span>
+                    <input class="input-control" id="membershipTier" name="membershipTier" readonly type="text"
+                      value="Standard Connoisseur (Free)">
+                  </div>
+                </div>
+
+                <!-- 17. Disabled field -->
+                <div class="form-group">
+                  <div class="field-label-row">
+                    <label for="memberId">Auto Member ID</label>
+                    <span class="field-tag">Disabled</span>
+                  </div>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon-left">badge</span>
+                    <input class="input-control" disabled id="memberId" name="memberId" type="text"
+                      value="BB-9402-AUTO">
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <!-- 18. Terms and Conditions Checkbox -->
+            <div class="terms-card">
+              <label class="terms-label">
+                <input id="termsCheck" name="terms" required type="checkbox">
+                <span>
+                  I agree to the <a href="#terms">Brew &amp; Bloom Coffee Club terms</a> and <a href="#privacy">privacy
+                    policy</a>. I consent to receive occasional invites and bean dispatch notes. <span
+                    class="mandatory-star">*</span>
+                </span>
+              </label>
+            </div>
+
+            <!-- 19. Action Buttons -->
+            <div class="form-buttons-row">
+              <button class="btn-reset" type="reset">
+                <span class="material-symbols-outlined">restart_alt</span>
+                <span>Reset Form</span>
+              </button>
+              <button class="btn-submit" type="submit">
+                <span>Create Membership</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Toast Notification -->
+    <div class="toast-box hidden" id="successToast">
+      <div class="toast-icon">
+        <span class="material-symbols-outlined">check</span>
+      </div>
+      <div class="toast-content">
+        <h3>Welcome to the Club!</h3>
+        <p>Your application has been logged into the barista terminal. An invitation coffee card has been prepared.</p>
+      </div>
+      <button class="toast-close-btn" type="button" aria-label="Close notification">
+        <span class="material-symbols-outlined">close</span>
+      </button>
+    </div>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer id="site-footer">
+    <div class="site-container">
+      <div class="footer-top-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-logo-row">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+              viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M12 2a4.5 4.5 0 0 0-4.5 4.5c0 3 4.5 5.5 4.5 5.5s4.5-2.5 4.5-5.5A4.5 4.5 0 0 0 12 2z"></path>
+              <path d="M12 22a4.5 4.5 0 0 1-4.5-4.5c0-3 4.5-5.5 4.5-5.5s4.5 2.5 4.5 5.5A4.5 4.5 0 0 1 12 22z"></path>
+              <path d="M2 12a4.5 4.5 0 0 0 4.5 4.5c3 0 5.5-4.5 5.5-4.5s-2.5-4.5-5.5-4.5A4.5 4.5 0 0 0 2 12z"></path>
+              <path d="M22 12a4.5 4.5 0 0 1-4.5 4.5c-3 0-5.5-4.5-5.5-4.5s2.5-4.5 5.5-4.5A4.5 4.5 0 0 1 22 12z"></path>
+            </svg>
+            <span class="footer-brand-name">Brew &amp; Bloom</span>
+          </div>
+          <p class="footer-brand-desc">
+            Artisanal roasts &amp; botanical moments in every cup.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <span class="material-symbols-outlined">photo_camera</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Journal">
+              <span class="material-symbols-outlined">rss_feed</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Share">
+              <span class="material-symbols-outlined">share</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Address Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Visit Our Atelier</h4>
+          <p class="footer-text">142 Blossom St, Portland, OR</p>
+          <p class="footer-text">United States</p>
+        </div>
+
+        <!-- Hours Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Opening Hours</h4>
+          <p class="footer-text">Mon – Fri: 7am – 6pm</p>
+          <p class="footer-text">Sat – Sun: 8am – 7pm</p>
+        </div>
+
+        <!-- Offerings Links Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Specialty Offerings</h4>
+          <ul class="footer-links-list">
+            <li><a href="media.html">Single Origin Pour-Overs</a></li>
+            <li><a href="services.html">Seasonal Floral Subscriptions</a></li>
+            <li><a href="services.html">Private Botanical Workshops</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <span>&copy; 2024 Brew &amp; Bloom. All rights reserved.</span>
+        <span>Crafted with warmth &amp; organic botanical reverence.</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>
