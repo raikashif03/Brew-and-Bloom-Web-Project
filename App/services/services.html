@@ -93,11 +93,11 @@
           </div>
 
           <div class="service-filters" role="tablist" aria-label="Service categories">
-            <button class="filter-pill active" type="button">All Offerings</button>
-            <button class="filter-pill" type="button">Coffee &amp; Espresso</button>
-            <button class="filter-pill" type="button">Boulangerie &amp; Brunch</button>
-            <button class="filter-pill" type="button">Events &amp; Spaces</button>
-            <button class="filter-pill" type="button">Masterclasses</button>
+            <button class="filter-pill active" data-filter="all" type="button">All Offerings</button>
+            <button class="filter-pill" data-filter="coffee" type="button">Coffee &amp; Espresso</button>
+            <button class="filter-pill" data-filter="boulangerie" type="button">Boulangerie &amp; Brunch</button>
+            <button class="filter-pill" data-filter="events" type="button">Events &amp; Spaces</button>
+            <button class="filter-pill" data-filter="masterclasses" type="button">Masterclasses</button>
           </div>
 
         </div>
@@ -109,7 +109,7 @@
 
         <div class="services-flex-row">
 
-          <article class="service-card">
+          <article class="service-card" data-category="coffee">
             <div class="card-visual">
               <img src="../../assets/images/service-coffee.png"
                 alt="Artisanal pour over coffee brewing with kettle, dripper, and roasted coffee beans">
@@ -138,7 +138,7 @@
             </div>
           </article>
 
-          <article class="service-card card-highlight">
+          <article class="service-card card-highlight" data-category="boulangerie">
             <div class="card-visual">
               <div class="tilted-badge-wrapper">
                 <div class="tilted-badge">
@@ -172,7 +172,7 @@
             </div>
           </article>
 
-          <article class="service-card">
+          <article class="service-card" data-category="boulangerie">
             <div class="card-visual">
               <img src="../../assets/images/service-brunch.png"
                 alt="Gourmet cafe avocado toast with poached eggs and microgreens on rustic sourdough">
@@ -200,7 +200,7 @@
             </div>
           </article>
 
-          <article class="service-card">
+          <article class="service-card" data-category="events">
             <div class="card-visual">
               <img src="../../assets/images/service-catering.png"
                 alt="Warm cozy botanical cafe interior with sunlight streaming through large greenhouse windows">
@@ -228,7 +228,7 @@
             </div>
           </article>
 
-          <article class="service-card">
+          <article class="service-card" data-category="coffee">
             <div class="card-visual">
               <img src="../../assets/images/media-cold-brew.png"
                 alt="Counter shot showing various specialty iced coffees and craft cold brew infusions">
@@ -257,7 +257,7 @@
             </div>
           </article>
 
-          <article class="service-card">
+          <article class="service-card" data-category="masterclasses">
             <div class="card-visual">
               <img src="../../assets/images/service-workshop.png"
                 alt="Artisan barista pouring delicate latte art rosette into ceramic mug on wooden counter">
@@ -434,6 +434,7 @@
     </div>
   </footer>
 
+  <script src="services.js"></script>
 </body>
 
 </html>

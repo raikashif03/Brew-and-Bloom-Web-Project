@@ -178,6 +178,8 @@
           </div>
 
           <form id="coffeeClubForm" novalidate>
+            <div id="formErrorAlert" style="display: none; margin-bottom: 24px; padding: 16px 20px; background-color: rgba(239, 68, 68, 0.12); border: 2px solid #ef4444; border-radius: 12px; color: #b91c1c; font-size: 15px; font-weight: 600;"></div>
+            <div id="formSuccessBanner" style="display: none; margin-bottom: 24px; padding: 18px 24px; background-color: rgba(46, 125, 50, 0.12); border: 2px solid #2e7d32; border-radius: 14px; color: #2e7d32; font-size: 16px; font-weight: 700; text-align: center;">Welcome to the Coffee Club! Your membership application has been received successfully!</div>
 
           <fieldset class="form-section-block">
             <legend class="form-legend">
@@ -205,29 +207,28 @@
                 </div>
                 <div class="input-wrapper">
                   <span class="material-symbols-outlined input-icon-left">alternate_email</span>
-                  <input class="input-control focus-demo" id="username" maxlength="16" minlength="4" name="username"
-                    type="text" value="julian_roasts">
+                  <input class="input-control" id="username" maxlength="16" minlength="4" name="username" type="text" placeholder="e.g. julian_roasts">
                 </div>
                 <div class="field-hint">
                   <span>Between 4-16 characters</span>
-                  <span>13 / 16 chars</span>
+                  <span id="usernameCharCount">0 / 16 chars</span>
                 </div>
               </div>
 
               <div class="form-group">
                 <div class="field-label-row">
                   <label for="email">Email Address <span class="mandatory-star">*</span></label>
-                  <span class="field-tag-valid">Verified Valid</span>
+                  <span class="field-tag-valid" id="emailTag" style="display: none;">Verified Valid</span>
                 </div>
                 <div class="input-wrapper">
                   <span class="material-symbols-outlined input-icon-left">mail</span>
-                  <input class="input-control valid-demo" id="email" name="email" required type="email"
-                    value="julian.thorne@botanicalcoffee.co">
-                  <span class="material-symbols-outlined input-icon-right valid-icon">check_circle</span>
+                  <input class="input-control" id="email" name="email" required type="email"
+                    placeholder="e.g. julian.thorne@botanicalcoffee.co">
+                  <span class="material-symbols-outlined input-icon-right valid-icon" id="emailCheckIcon" style="display: none;">check_circle</span>
                 </div>
-                <div class="field-hint-valid">
-                  <span class="material-symbols-outlined">verified</span>
-                  <span>Valid email format &amp; available for membership</span>
+                <div class="field-hint-valid" id="emailHint" style="display: none;">
+                  <span class="material-symbols-outlined" id="emailHintIcon">verified</span>
+                  <span id="emailHintText">Valid email format &amp; available for membership</span>
                 </div>
               </div>
 
@@ -238,10 +239,9 @@
                 </div>
                 <div class="input-wrapper">
                   <span class="material-symbols-outlined input-icon-left">lock</span>
-                  <input class="input-control" id="password" minlength="8" name="password" required type="password"
-                    value="CinnamonLavender#9">
-                  <button class="toggle-pass-btn" type="button" aria-label="Toggle password view">
-                    <span class="material-symbols-outlined">visibility</span>
+                  <input class="input-control" id="password" minlength="8" name="password" required type="password" placeholder="Enter password (min 8 characters)">
+                  <button class="toggle-pass-btn" id="togglePassBtn" type="button" aria-label="Toggle password view">
+                    <span class="material-symbols-outlined" id="togglePassIcon">visibility</span>
                   </button>
                 </div>
                 <div class="pass-strength-bar">
@@ -367,9 +367,7 @@
                 <label for="aboutYou">About your morning ritual</label>
                 <span class="field-tag">3-5 sentences</span>
               </div>
-              <textarea class="textarea-control" id="aboutYou" name="aboutYou"
-                placeholder="Tell us how you enjoy your morning brew, favorite book accompaniment, or record spinning..."
-                rows="3">I enjoy natural process African roasts paired with quiet morning essays and natural skylight before the city stirs.</textarea>
+              <textarea class="textarea-control" id="aboutYou" name="aboutYou" placeholder="Tell us how you enjoy your morning brew, favorite book accompaniment, or record spinning..." rows="3"></textarea>
             </div>
 
             <div class="form-group">
@@ -580,6 +578,7 @@
     </div>
   </footer>
 
+  <script src="register.js"></script>
 </body>
 
 </html>

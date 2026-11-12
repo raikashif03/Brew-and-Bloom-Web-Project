@@ -367,14 +367,15 @@
           </div>
 
           <div class="newsletter-form-col">
-            <form id="newsletter-form" action="#" method="post">
+            <form id="newsletter-form" action="#" method="post" novalidate>
               <label for="newsletter-email" class="visually-hidden">Email address</label>
               <input class="newsletter-input" id="newsletter-email" name="email" type="email" autocomplete="email"
-                placeholder="Enter your email address" required aria-label="Email address">
+                placeholder="Enter your email address" aria-label="Email address">
               <button class="newsletter-submit-btn" type="submit">
                 Subscribe
               </button>
             </form>
+            <div id="newsletter-msg" style="display: none; margin-top: 12px; font-size: 14px; font-weight: 600; padding: 10px 16px; border-radius: 8px;"></div>
           </div>
 
         </div>
@@ -446,6 +447,7 @@
     </div>
   </footer>
 
+  <script src="home.js"></script>
 </body>
 
 </html>
