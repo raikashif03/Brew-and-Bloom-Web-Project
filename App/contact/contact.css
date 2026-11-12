@@ -23,7 +23,6 @@
   --card-shadow: 0 4px 18px rgba(62, 39, 35, 0.05);
 }
 
-/* Requirement: Complete Dark Theme Mode */
 body.dark-theme {
   --bg-page: #191413;
   --bg-surface: #241d1b;
@@ -433,7 +432,6 @@ body.dark-theme .tray-status {
   white-space: nowrap;
 }
 
-
 #main-content {
   padding-top: 76px;
   background-color: var(--bg-page);
@@ -445,7 +443,6 @@ body.dark-theme .tray-status {
     padding-top: 82px;
   }
 }
-
 
 #contact-intro {
   padding: 44px 0 28px;
@@ -519,7 +516,6 @@ body.dark-theme .tray-status {
   color: var(--text-secondary);
 }
 
-
 #contact-split-section {
   padding: 40px 0 80px;
 }
@@ -537,7 +533,6 @@ body.dark-theme .tray-status {
     gap: 40px;
   }
 }
-
 
 .left-content-col {
   display: flex;
@@ -759,7 +754,6 @@ body.dark-theme .tray-status {
   font-size: 14px;
 }
 
-/* 5C. Contact Information Cards Grid */
 .contact-info-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -878,7 +872,6 @@ body.dark-theme .tray-status {
   font-size: 20px;
   flex-shrink: 0;
 }
-
 
 .form-wrapper-card {
   background-color: var(--bg-surface);
@@ -1006,7 +999,6 @@ body.dark-theme .tray-status {
   box-shadow: 0 0 0 3px rgba(136, 82, 16, 0.18);
 }
 
-/* Valid demo field state */
 .input-field.valid-field {
   border: 2px solid #2e7d32;
   background-color: rgba(46, 125, 50, 0.04);
@@ -1215,7 +1207,6 @@ body.dark-theme .btn-submit:hover {
   color: var(--text-secondary);
 }
 
-
 #site-footer {
   width: 100%;
   background-color: var(--bg-container);
@@ -1379,7 +1370,6 @@ body.dark-theme .btn-submit:hover {
     text-align: left;
   }
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   *,

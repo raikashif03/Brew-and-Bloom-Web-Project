@@ -102,7 +102,6 @@ textarea {
   clear: both;
 }
 
-/* 2. SITE HEADER & NAVIGATION */
 #site-header {
   position: fixed;
   top: 0;
@@ -237,7 +236,6 @@ textarea {
   white-space: nowrap;
 }
 
-/* 3. MAIN CONTENT  */
 #main-content {
   padding-top: 72px;
   padding-bottom: 60px;
@@ -329,7 +327,6 @@ textarea {
   background-color: #d3c3c0;
 }
 
-/* 4. MEMBER BENEFITS  */
 #benefits-strip {
   padding: 10px 0 30px;
 }
@@ -452,7 +449,6 @@ textarea {
   display: block;
 }
 
-/* 6. FORM CARD */
 #form-section {
   padding: 10px 0 40px;
 }
@@ -618,7 +614,6 @@ textarea {
   border-radius: 4px;
 }
 
-/* 7. INPUTS & FORM CONTROLS */
 .input-wrapper {
   position: relative;
   display: flex;
@@ -736,7 +731,6 @@ textarea {
   background-color: #885210;
 }
 
-/* 8. COLOR, RANGE, SELECT, TEXTAREA & DROPZONE */
 .color-picker-box {
   display: flex;
   align-items: center;
@@ -1161,7 +1155,6 @@ textarea {
   align-items: center;
 }
 
-/* 10. SITE FOOTER */
 #site-footer {
   background-color: #faeedf;
   border-top: 1px solid rgba(62, 39, 35, 0.12);
@@ -1298,7 +1291,6 @@ textarea {
   }
 }
 
-/* 11. KEYFRAME ANIMATIONS & ACCESSIBILITY */
 @keyframes toast-pop {
   0% {
     opacity: 0;

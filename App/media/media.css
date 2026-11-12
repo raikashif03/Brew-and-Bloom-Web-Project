@@ -63,7 +63,6 @@ input {
   font-size: 16px;
 }
 
-/* Screen reader  */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -76,7 +75,6 @@ input {
   border: 0;
 }
 
-/* Shared Site Container  */
 .site-container {
   width: 100%;
   max-width: 1200px;
@@ -100,16 +98,12 @@ input {
   }
 }
 
-/* Clearfix Utility */
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* 
-   2. SITE HEADER & NAVIGATION BAR 
- */
 #site-header {
   position: fixed;
   top: 0;
@@ -255,9 +249,6 @@ input {
   white-space: nowrap;
 }
 
-/* 
-   3. MAIN CONTENT CONTAINER (#main-content)
-    */
 #main-content {
   padding-top: 72px;
   background-color: #fff8f2;
@@ -269,9 +260,6 @@ input {
   }
 }
 
-/* 
-   4. MEDIA HERO BANNER (#media-hero)
-    */
 #media-hero {
   position: relative;
   width: 100%;
@@ -349,9 +337,6 @@ input {
   }
 }
 
-/* 
-   5. AUDIO AMBIANCE SECTION (#audio-section)
-    */
 #audio-section {
   padding: 40px 0 20px;
 }
@@ -541,9 +526,6 @@ input {
   border-radius: 9999px;
 }
 
-/* 
-   6. VIDEO & IMAGE SHOWCASE SECTION (#media-showcase)
-    */
 #media-showcase {
   padding: 30px 0;
 }
@@ -730,8 +712,6 @@ input {
   font-size: 16px;
 }
 
-/* 
-   7. PURPOSEFUL FLOAT & CLEAR SECTIon= */
 #tasting-note-section {
   padding: 20px 0;
 }
@@ -792,9 +772,6 @@ input {
   display: block;
 }
 
-/* 
-   8. BREWING STEPS & SPECIALTIES SECTION 
-    */
 #process-section {
   padding: 30px 0;
 }
@@ -961,9 +938,6 @@ input {
   text-align: right;
 }
 
-/* 
-   9. MENU & PRICES DATA TABLE (#menu-table-section)
-    */
 #menu-table-section {
   padding: 30px 0 50px;
 }
@@ -1094,9 +1068,6 @@ input {
   font-size: 15px;
 }
 
-/* 
-   10. SITE FOOTER (#site-footer)
-    */
 #site-footer {
   background-color: #faeedf;
   border-top: 1px solid rgba(62, 39, 35, 0.12);
@@ -1233,8 +1204,6 @@ input {
   }
 }
 
-/* 
-   11. KEYFRAME ANIMATIONS & CSS3 EFFECTS */
 @keyframes pulse-glow {
 
   0%,
@@ -1247,8 +1216,6 @@ input {
   }
 }
 
-/* 
-   12. ACCESSIBILITY & REDUCED MOTION PREFERENCE */
 @media (prefers-reduced-motion: reduce) {
 
   *,

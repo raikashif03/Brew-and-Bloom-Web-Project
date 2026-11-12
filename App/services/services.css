@@ -1,9 +1,4 @@
-/* ==========================================================================
-   Brew & Bloom — Services & Offerings Stylesheet (services.css)
-   Clean, Pure CSS with Flexbox Layout & Pill-Shaped Navigation
-   ========================================================================== */
 
-/* 1. CSS Reset & Base Rules */
 *,
 *::before,
 *::after {
@@ -80,7 +75,6 @@ button {
   line-height: 1;
 }
 
-/* Common Layout Container */
 .site-container {
   width: 100%;
   max-width: 1200px;
@@ -104,9 +98,6 @@ button {
   }
 }
 
-/* ==========================================================================
-   2. SITE HEADER & PILL-BUTTON NAVIGATION (Requirement: Services Pill Style)
-   ========================================================================== */
 #site-header {
   position: fixed;
   top: 0;
@@ -161,7 +152,6 @@ button {
   color: #271310;
 }
 
-/* Distinct Services Pill-Style Desktop Navigation */
 .desktop-nav {
   display: none;
   align-items: center;
@@ -254,7 +244,6 @@ button {
   transform: scale(1.06);
 }
 
-/* Mobile Nav Strip (Overflow-X Scroll) */
 .mobile-nav-strip {
   display: flex;
   align-items: center;
@@ -282,9 +271,6 @@ button {
   white-space: nowrap;
 }
 
-/* ==========================================================================
-   3. MAIN CONTENT CONTAINER
-   ========================================================================== */
 #main-content {
   padding-top: 76px;
   background-color: #fff8f2;
@@ -296,9 +282,6 @@ button {
   }
 }
 
-/* ==========================================================================
-   4. SERVICES HERO SECTION
-   ========================================================================== */
 #services-hero {
   position: relative;
   padding: 48px 0 32px;
@@ -388,7 +371,6 @@ button {
   color: #885210;
 }
 
-/* Category Filter Strip */
 .service-filters {
   display: flex;
   flex-wrap: wrap;
@@ -421,9 +403,6 @@ button {
   box-shadow: 0 2px 6px rgba(39, 19, 16, 0.2);
 }
 
-/* ==========================================================================
-   5. SERVICES FLEXBOX SHOWCASE (6 CARDS WRAPPING ROW)
-   ========================================================================== */
 #services-grid-section {
   padding: 50px 0 70px;
 }
@@ -434,7 +413,6 @@ button {
   }
 }
 
-/* Wrapping Flexbox Row */
 .services-flex-row {
   display: flex;
   flex-wrap: wrap;
@@ -443,7 +421,6 @@ button {
   row-gap: 32px;
 }
 
-/* Individual Service Card (3 per row desktop, 2 tablet, 1 mobile) */
 .service-card {
   flex: 0 0 100%;
   max-width: 100%;
@@ -467,7 +444,6 @@ button {
   }
 }
 
-/* Card Outer Shell */
 .service-card {
   background-color: #ffffff;
   border-radius: 20px;
@@ -482,7 +458,6 @@ button {
   box-shadow: 0 16px 36px -6px rgba(62, 39, 35, 0.12), 0 4px 10px rgba(62, 39, 35, 0.06);
 }
 
-/* Visual Frame & Image */
 .card-visual {
   position: relative;
   width: 100%;
@@ -525,7 +500,6 @@ button {
   color: #885210;
 }
 
-/* Requirement: Tilted / Rotated Badge on One Card */
 .tilted-badge-wrapper {
   position: absolute;
   top: -4px;
@@ -552,7 +526,6 @@ button {
   transform: rotate(-3deg) scale(1.05);
 }
 
-/* Card Content Area */
 .card-content {
   padding: 24px;
   display: flex;
@@ -598,7 +571,6 @@ button {
   flex: 1;
 }
 
-/* Card Action Footer */
 .card-footer {
   display: flex;
   align-items: center;
@@ -643,9 +615,6 @@ button {
   font-style: italic;
 }
 
-/* ==========================================================================
-   6. CRAFT STANDARDS SECTION (4 PILLARS FLEXBOX)
-   ========================================================================== */
 #craft-standards-section {
   padding: 60px 0;
   background-color: #f7edde;
@@ -732,9 +701,6 @@ button {
   color: #504442;
 }
 
-/* ==========================================================================
-   7. SERVICES CALL TO ACTION BANNER
-   ========================================================================== */
 #services-cta-section {
   padding: 60px 0;
 }
@@ -840,9 +806,6 @@ button {
   transform: translateY(-2px);
 }
 
-/* ==========================================================================
-   8. SITE FOOTER (Standardized Across Entire Website)
-   ========================================================================== */
 #site-footer {
   width: 100%;
   background-color: #faeedf;
@@ -984,7 +947,6 @@ button {
   transform: translateX(4px);
 }
 
-/* Footer Bottom Bar */
 .footer-bottom-bar {
   padding-top: 24px;
   border-top: 1px solid rgba(62, 39, 35, 0.1);
@@ -1006,9 +968,6 @@ button {
   }
 }
 
-/* ==========================================================================
-   9. ACCESSIBILITY & PREFERS-REDUCED-MOTION
-   ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
