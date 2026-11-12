@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Brew &amp; Bloom Artisanal Services: Handcrafted single-origin espresso, morning boulangerie bakes, greenhouse catering, and barista workshops in Portland.">
+  <title>Services &amp; Offerings — Brew &amp; Bloom</title>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+
+  <!-- Page Stylesheet -->
+  <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+  <!-- Site Header & Navigation Bar (Services Feature: Pill-Button Nav Layout) -->
+  <header id="site-header">
+    <div class="site-container">
+      <div class="header-inner">
+
+        <a class="brand-logo" href="../home/home.html" aria-label="Brew &amp; Bloom Home">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="3.8" r="1.6"></circle>
+            <circle cx="15.1" cy="5.6" r="1.6"></circle>
+            <circle cx="15.1" cy="9.2" r="1.6"></circle>
+            <circle cx="12" cy="11" r="1.6"></circle>
+            <circle cx="8.9" cy="9.2" r="1.6"></circle>
+            <circle cx="8.9" cy="5.6" r="1.6"></circle>
+            <circle cx="12" cy="7.4" r="1.4" fill="none" stroke="currentColor" stroke-width="1.3"></circle>
+            <path
+              d="M11.6 18.2C11.6 18.2 8.2 17.4 5.8 14.5C4.1 12.5 4.6 9.8 4.6 9.8C4.6 9.8 7.3 10.2 9.9 12.7C11.1 14 11.6 15.9 11.6 18.2Z">
+            </path>
+            <path
+              d="M12.4 18.2C12.4 18.2 15.8 17.4 18.2 14.5C19.9 12.5 19.4 9.8 19.4 9.8C19.4 9.8 16.7 10.2 14.1 12.7C12.9 14 12.4 15.9 12.4 18.2Z">
+            </path>
+          </svg>
+          <span class="brand-name">Brew &amp; Bloom</span>
+        </a>
+
+        <!-- Desktop Navigation with Pill-Shaped Buttons -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a class="nav-pill" href="../home/home.html">Home</a>
+          <a class="nav-pill" href="../media/media.html">Media</a>
+          <a class="nav-pill" href="../register/register.html">Register</a>
+          <a class="nav-pill active" aria-current="page" href="../services/services.html">Services</a>
+          <a class="nav-pill" href="../portfolio/portfolio.html">Portfolio</a>
+          <a class="nav-pill" href="../contact/contact.html">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="header-cta-btn" href="../register/register.html">
+            <span class="material-symbols-outlined">card_membership</span>
+            <span>Join Club</span>
+          </a>
+          <button class="account-btn" type="button" aria-label="User account">
+            <span class="material-symbols-outlined">person</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Bar -->
+    <nav class="mobile-nav-strip" aria-label="Mobile Navigation">
+      <a class="nav-pill" href="../home/home.html">Home</a>
+      <a class="nav-pill" href="../media/media.html">Media</a>
+      <a class="nav-pill" href="../register/register.html">Register</a>
+      <a class="nav-pill active" aria-current="page" href="../services/services.html">Services</a>
+      <a class="nav-pill" href="../portfolio/portfolio.html">Portfolio</a>
+      <a class="nav-pill" href="../contact/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main id="main-content">
+
+    <!-- 1. Editorial Hero Section -->
+    <section id="services-hero">
+      <div class="site-container">
+        <div class="hero-center-box">
+
+          <div class="hero-badge">
+            <span class="material-symbols-outlined hero-badge-icon">temp_preferences_custom</span>
+            <span class="hero-badge-text">Curated Daily Rituals</span>
+          </div>
+
+          <h1 class="hero-title">Our Artisanal Services &amp; Offerings</h1>
+
+          <p class="hero-description">
+            From single-origin farm-gate roasts to private sensory cupping sessions, explore how we craft thoughtful
+            culinary, botanical, and hospitality experiences for our Portland community.
+          </p>
+
+          <div class="hero-flourish">
+            <span class="flourish-bar"></span>
+            <span class="material-symbols-outlined flourish-icon">spa</span>
+            <span class="flourish-bar"></span>
+          </div>
+
+          <!-- Interactive Category Filter Strip -->
+          <div class="service-filters" role="tablist" aria-label="Service categories">
+            <button class="filter-pill active" type="button">All Offerings</button>
+            <button class="filter-pill" type="button">Coffee &amp; Espresso</button>
+            <button class="filter-pill" type="button">Boulangerie &amp; Brunch</button>
+            <button class="filter-pill" type="button">Events &amp; Spaces</button>
+            <button class="filter-pill" type="button">Masterclasses</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Services Flexbox Showcase (6 Cards wrapping flex row) -->
+    <section id="services-grid-section">
+      <div class="site-container">
+
+        <!-- Flexbox Row Container (Wraps 3 per row on desktop, 2 on tablet, 1 on mobile) -->
+        <div class="services-flex-row">
+
+          <!-- Card 1: Coffee & Espresso Bar -->
+          <article class="service-card">
+            <div class="card-visual">
+              <img src="../../assets/images/service-coffee.png"
+                alt="Artisanal pour over coffee brewing with kettle, dripper, and roasted coffee beans">
+              <div class="visual-tag">
+                <span class="material-symbols-outlined tag-icon">coffee</span>
+                <span>Single Origin</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta-row">
+                <h3 class="card-title">Coffee &amp; Espresso Bar</h3>
+                <span class="card-price">From $4.50</span>
+              </div>
+              <p class="card-desc">
+                Hand-poured single origins, calibrated micro-lot roasts, and seasonal botanical espresso elixirs pulled
+                on
+                our custom Synesso MVP machine.
+              </p>
+              <div class="card-footer">
+                <a class="card-action-btn" href="../media/media.html">
+                  <span>Order Now</span>
+                  <span class="material-symbols-outlined btn-arrow">arrow_forward</span>
+                </a>
+                <span class="card-foot-note">In-house &amp; To-go</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Fresh Morning Bakery (Features Tilted Rotated Badge) -->
+          <article class="service-card card-highlight">
+            <div class="card-visual">
+              <!-- Tilted Badge Requirement -->
+              <div class="tilted-badge-wrapper">
+                <div class="tilted-badge">
+                  <span>★ Fresh Daily!</span>
+                </div>
+              </div>
+              <img src="../../assets/images/service-bakery.png"
+                alt="Golden flaky buttery French croissants and freshly baked artisan pastries on ceramic plates">
+              <div class="visual-tag">
+                <span class="material-symbols-outlined tag-icon">bakery_dining</span>
+                <span>Boulangerie</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta-row">
+                <h3 class="card-title">Fresh Morning Bakery</h3>
+                <span class="card-price">From $3.75</span>
+              </div>
+              <p class="card-desc">
+                Flaky cultured-butter croissants, cardamom knots, and pistachio rose canelés baked fresh every dawn in
+                our
+                stone hearth roastery oven.
+              </p>
+              <div class="card-footer">
+                <a class="card-action-btn" href="../media/media.html">
+                  <span>Order Now</span>
+                  <span class="material-symbols-outlined btn-arrow">arrow_forward</span>
+                </a>
+                <span class="card-foot-note">Baked at 6:00 AM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Botanical Breakfast & Brunch -->
+          <article class="service-card">
+            <div class="card-visual">
+              <img src="../../assets/images/service-brunch.png"
+                alt="Gourmet cafe avocado toast with poached eggs and microgreens on rustic sourdough">
+              <div class="visual-tag">
+                <span class="material-symbols-outlined tag-icon">brunch_dining</span>
+                <span>Farm-to-Table</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta-row">
+                <h3 class="card-title">Breakfast &amp; Kitchen Plates</h3>
+                <span class="card-price">From $8.50</span>
+              </div>
+              <p class="card-desc">
+                Organic avocado tartines with microgreens, soft-poached farm eggs, seasonal whipped ricotta bowls, and
+                citrus-dressed brioche.
+              </p>
+              <div class="card-footer">
+                <a class="card-action-btn" href="../media/media.html">
+                  <span>View Menu</span>
+                  <span class="material-symbols-outlined btn-arrow">arrow_forward</span>
+                </a>
+                <span class="card-foot-note">Served until 2:00 PM</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4: Catering & Events -->
+          <article class="service-card">
+            <div class="card-visual">
+              <img src="../../assets/images/service-catering.png"
+                alt="Warm cozy botanical cafe interior with sunlight streaming through large greenhouse windows">
+              <div class="visual-tag">
+                <span class="material-symbols-outlined tag-icon">corporate_fare</span>
+                <span>Private Gatherings</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta-row">
+                <h3 class="card-title">Catering &amp; Space Rental</h3>
+                <span class="card-price">Bespoke</span>
+              </div>
+              <p class="card-desc">
+                Exclusive greenhouse courtyard reservations for acoustic soirees, mindful corporate offsites, book
+                launches, and celebratory botanical brunches.
+              </p>
+              <div class="card-footer">
+                <a class="card-action-btn" href="../contact/contact.html">
+                  <span>Inquire Now</span>
+                  <span class="material-symbols-outlined btn-arrow">arrow_forward</span>
+                </a>
+                <span class="card-foot-note">Up to 60 Guests</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5: Online Ordering & Bean Dispensary -->
+          <article class="service-card">
+            <div class="card-visual">
+              <img src="../../assets/images/media-cold-brew.png"
+                alt="Counter shot showing various specialty iced coffees and craft cold brew infusions">
+              <div class="visual-tag">
+                <span class="material-symbols-outlined tag-icon">local_shipping</span>
+                <span>Dispensary</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta-row">
+                <h3 class="card-title">Bean Dispensary &amp; Delivery</h3>
+                <span class="card-price">From $18 / Bag</span>
+              </div>
+              <p class="card-desc">
+                Bi-weekly or monthly whole-bean deliveries from Oaxaca and Sidama, complete with roast date cards,
+                tasting
+                notes, and dialed grind guides.
+              </p>
+              <div class="card-footer">
+                <a class="card-action-btn" href="../register/register.html">
+                  <span>Join Dispensary</span>
+                  <span class="material-symbols-outlined btn-arrow">arrow_forward</span>
+                </a>
+                <span class="card-foot-note">Free Local Delivery</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 6: Barista Workshops -->
+          <article class="service-card">
+            <div class="card-visual">
+              <img src="../../assets/images/service-workshop.png"
+                alt="Artisan barista pouring delicate latte art rosette into ceramic mug on wooden counter">
+              <div class="visual-tag">
+                <span class="material-symbols-outlined tag-icon">school</span>
+                <span>Masterclasses</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="card-meta-row">
+                <h3 class="card-title">Cupping &amp; Pour-Over Clinics</h3>
+                <span class="card-price">$45 / Session</span>
+              </div>
+              <p class="card-desc">
+                Intimate 2-hour weekend workshops exploring extraction dynamics, water mineral density, milk microfoam
+                texturing, and latte art mechanics.
+              </p>
+              <div class="card-footer">
+                <a class="card-action-btn" href="../contact/contact.html">
+                  <span>Book Workshop</span>
+                  <span class="material-symbols-outlined btn-arrow">arrow_forward</span>
+                </a>
+                <span class="card-foot-note">Weekend Sessions</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Craft Standards Strip (Flexbox Pillars) -->
+    <section id="craft-standards-section">
+      <div class="site-container">
+
+        <div class="section-title-wrap">
+          <span class="section-eyebrow">Uncompromising Integrity</span>
+          <h2 class="section-heading">How We Uphold Our Craft</h2>
+          <p class="section-sub">Four foundational pillars that elevate every sip and bite in our atelier.</p>
+        </div>
+
+        <div class="standards-flex-row">
+          <div class="standard-item">
+            <div class="standard-icon-box">
+              <span class="material-symbols-outlined">handshake</span>
+            </div>
+            <h4 class="standard-title">Direct-Trade Ethos</h4>
+            <p class="standard-text">
+              We pay 45% above Fair Trade minimums directly to micro-lot growers across Oaxaca, Huila, and Sidama.
+            </p>
+          </div>
+
+          <div class="standard-item">
+            <div class="standard-icon-box">
+              <span class="material-symbols-outlined">fireplace</span>
+            </div>
+            <h4 class="standard-title">Small-Batch Roasts</h4>
+            <p class="standard-text">
+              Every bean is roasted twice weekly in our vintage 1962 cast-iron drum roaster for maximum aromatic
+              clarity.
+            </p>
+          </div>
+
+          <div class="standard-item">
+            <div class="standard-icon-box">
+              <span class="material-symbols-outlined">nest_eco_leaf</span>
+            </div>
+            <h4 class="standard-title">Living Green Sanctuary</h4>
+            <p class="standard-text">
+              Over forty species of air-purifying tropical botanicals cultivate a serene indoor microclimate.
+            </p>
+          </div>
+
+          <div class="standard-item">
+            <div class="standard-icon-box">
+              <span class="material-symbols-outlined">recycling</span>
+            </div>
+            <h4 class="standard-title">100% Circular Waste</h4>
+            <p class="standard-text">
+              Used grounds, chaff, and food scraps are composted daily in Portland community botanical gardens.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. Booking & Event CTA Banner -->
+    <section id="services-cta-section">
+      <div class="site-container">
+        <div class="cta-banner-card">
+          <div class="cta-content">
+            <span class="cta-pill">Host with Us</span>
+            <h2 class="cta-title">Ready to Curate Your Gathering or Reserve Our Courtyard?</h2>
+            <p class="cta-text">
+              Speak with our event coordinator to design bespoke pastry pairings, private coffee cupping flights, or
+              sensory floral workshops for your guests.
+            </p>
+            <div class="cta-btn-group">
+              <a class="btn btn-primary" href="../contact/contact.html">
+                <span>Inquire About Space</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+              <a class="btn btn-secondary" href="../media/media.html">
+                <span>Browse Full Menu</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer (Standardized Across All 6 Pages) -->
+  <footer id="site-footer">
+    <div class="site-container">
+      <div class="footer-top-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-logo-row">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+              viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M12 2a4.5 4.5 0 0 0-4.5 4.5c0 3 4.5 5.5 4.5 5.5s4.5-2.5 4.5-5.5A4.5 4.5 0 0 0 12 2z"></path>
+              <path d="M12 22a4.5 4.5 0 0 1-4.5-4.5c0-3 4.5-5.5 4.5-5.5s4.5 2.5 4.5 5.5A4.5 4.5 0 0 1 12 22z"></path>
+              <path d="M2 12a4.5 4.5 0 0 0 4.5 4.5c3 0 5.5-4.5 5.5-4.5s-2.5-4.5-5.5-4.5A4.5 4.5 0 0 0 2 12z"></path>
+              <path d="M22 12a4.5 4.5 0 0 1-4.5 4.5c-3 0-5.5-4.5-5.5-4.5s2.5-4.5 5.5-4.5A4.5 4.5 0 0 1 22 12z"></path>
+            </svg>
+            <span class="footer-brand-name">Brew &amp; Bloom</span>
+          </div>
+          <p class="footer-brand-desc">
+            Artisanal roasts &amp; botanical moments in every cup.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <span class="material-symbols-outlined">photo_camera</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Journal">
+              <span class="material-symbols-outlined">rss_feed</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Share">
+              <span class="material-symbols-outlined">share</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Address Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Visit Our Atelier</h4>
+          <p class="footer-text">142 Blossom St, Portland, OR</p>
+          <p class="footer-text">United States</p>
+          <p class="footer-text footer-text-spacer">hello@brewandbloom.cafe</p>
+        </div>
+
+        <!-- Hours Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Opening Hours</h4>
+          <p class="footer-text">Mon – Fri: 7am – 6pm</p>
+          <p class="footer-text">Sat – Sun: 8am – 7pm</p>
+        </div>
+
+        <!-- Offerings Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Specialty Offerings</h4>
+          <ul class="footer-links-list">
+            <li><a href="../media/media.html">Single Origin Pour-Overs</a></li>
+            <li><a href="../services/services.html">Seasonal Floral Subscriptions</a></li>
+            <li><a href="../services/services.html">Private Botanical Workshops</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <span>&copy; 2024 Brew &amp; Bloom. All rights reserved.</span>
+        <span>Crafted with warmth &amp; organic botanical reverence.</span>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
+</html>

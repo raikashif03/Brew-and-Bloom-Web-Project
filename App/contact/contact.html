@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact Brew &amp; Bloom botanical coffee sanctuary in Portland. Visit our atelier, message our barista team, book space rentals, or inquire about wholesale beans.">
+  <title>Contact &amp; Atelier — Brew &amp; Bloom</title>
+
+  <!-- Google Fonts & Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet">
+
+  <!-- Page Stylesheet -->
+  <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+
+  <!-- Site Header (Requirement: Minimal Navbar with Bottom Border & Theme/Hours Toggle) -->
+  <header id="site-header">
+    <div class="site-container">
+      <div class="header-inner">
+
+        <a class="brand-logo" href="../home/home.html" aria-label="Brew &amp; Bloom Home">
+          <svg class="brand-icon" viewBox="0 0 24 24" fill="currentColor">
+            <circle cx="12" cy="3.8" r="1.6"></circle>
+            <circle cx="15.1" cy="5.6" r="1.6"></circle>
+            <circle cx="15.1" cy="9.2" r="1.6"></circle>
+            <circle cx="12" cy="11" r="1.6"></circle>
+            <circle cx="8.9" cy="9.2" r="1.6"></circle>
+            <circle cx="8.9" cy="5.6" r="1.6"></circle>
+            <circle cx="12" cy="7.4" r="1.4" fill="none" stroke="currentColor" stroke-width="1.3"></circle>
+            <path d="M11.6 18.2C11.6 18.2 8.2 17.4 5.8 14.5C4.1 12.5 4.6 9.8 4.6 9.8C4.6 9.8 7.3 10.2 9.9 12.7C11.1 14 11.6 15.9 11.6 18.2Z"></path>
+            <path d="M12.4 18.2C12.4 18.2 15.8 17.4 18.2 14.5C19.9 12.5 19.4 9.8 19.4 9.8C19.4 9.8 16.7 10.2 14.1 12.7C12.9 14 12.4 15.9 12.4 18.2Z"></path>
+          </svg>
+          <span class="brand-name">Brew &amp; Bloom</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav" aria-label="Main Navigation">
+          <a class="nav-link" href="../home/home.html">Home</a>
+          <a class="nav-link" href="../media/media.html">Media</a>
+          <a class="nav-link" href="../register/register.html">Register</a>
+          <a class="nav-link" href="../services/services.html">Services</a>
+          <a class="nav-link" href="../portfolio/portfolio.html">Portfolio</a>
+          <a class="nav-link active" aria-current="page" href="../contact/contact.html">Contact</a>
+        </nav>
+
+        <!-- Header Actions: Quick Hours Drawer Trigger & Light/Dark Theme Toggle -->
+        <div class="header-actions">
+
+          <!-- Requirement: Hours Toggle Button -->
+          <button class="hours-toggle-btn" id="toggleHoursBtn" type="button" aria-expanded="false" aria-controls="quickHoursTray">
+            <span class="material-symbols-outlined icon-schedule">schedule</span>
+            <span class="hours-btn-label">Hours</span>
+            <span class="material-symbols-outlined icon-caret" id="hoursCaret">expand_more</span>
+          </button>
+
+          <!-- Requirement: Theme Toggle Button -->
+          <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Light and Dark Mode">
+            <span class="material-symbols-outlined" id="themeIcon">dark_mode</span>
+          </button>
+
+          <button class="account-btn" type="button" aria-label="User account">
+            <span class="material-symbols-outlined">person</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Quick Hours Collapsible Dropdown Tray -->
+    <div class="quick-hours-tray" id="quickHoursTray" hidden>
+      <div class="site-container">
+        <div class="tray-inner">
+          <div class="tray-col">
+            <span class="material-symbols-outlined tray-icon">coffee</span>
+            <div>
+              <p class="tray-heading">Weekday Service</p>
+              <p class="tray-sub">Mon – Fri: 7:00 AM – 6:00 PM</p>
+            </div>
+          </div>
+          <div class="tray-col">
+            <span class="material-symbols-outlined tray-icon">local_florist</span>
+            <div>
+              <p class="tray-heading">Weekend Bloom Market</p>
+              <p class="tray-sub">Sat – Sun: 8:00 AM – 7:00 PM</p>
+            </div>
+          </div>
+          <div class="tray-status">
+            <span class="status-dot"></span>
+            <span class="status-text">Currently Open &amp; Brewing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Bar -->
+    <nav class="mobile-nav-strip" aria-label="Mobile Navigation">
+      <a class="nav-link" href="../home/home.html">Home</a>
+      <a class="nav-link" href="../media/media.html">Media</a>
+      <a class="nav-link" href="../register/register.html">Register</a>
+      <a class="nav-link" href="../services/services.html">Services</a>
+      <a class="nav-link" href="../portfolio/portfolio.html">Portfolio</a>
+      <a class="nav-link active" aria-current="page" href="../contact/contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- 1. Editorial Header Section -->
+    <section id="contact-intro">
+      <div class="site-container">
+        <div class="intro-grid">
+          <div class="intro-title-col">
+            <div class="intro-pill">
+              <span class="material-symbols-outlined">nature_people</span>
+              <span>Get In Touch • Portland Roastery</span>
+            </div>
+            <h1 class="intro-heading">Connect with Our Sanctuary</h1>
+          </div>
+          <div class="intro-desc-col">
+            <p class="intro-lead">
+              Whether you are seeking wholesale single-origin lots, botanical workshop bookings, space rental for private
+              events, or simply a table under our fiddle-leaf figs, our team is at your service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Split Main Section: 2 Columns on Desktop (Left 7 Cols, Right 5 Cols) -->
+    <section id="contact-split-section">
+      <div class="site-container">
+        <div class="split-layout">
+
+          <!-- ================= LEFT COLUMN: Story, Team & Atelier Info (7 Cols) ================= -->
+          <div class="left-content-col">
+
+            <!-- 2A. Our Story & Regenerative Ethos Card -->
+            <article class="story-sanctuary-card">
+              <div class="eyebrow-tag">
+                <span class="material-symbols-outlined">spa</span>
+                <span>Regenerative Craft Ethos</span>
+              </div>
+              <h2 class="card-heading">Our Story &amp; Botanical Sanctuary</h2>
+              <p class="card-body-p">
+                Brew &amp; Bloom was born at the intersection of slow botanical living and ethical, altitude-grown coffee.
+                We partner directly with regenerative shade-canopy farms across Oaxaca, Huila, and Sidama, hand-roasting
+                in micro-lots every Tuesday and Thursday morning.
+              </p>
+              <p class="card-body-p">
+                Inside our 1920s Portland timber warehouse, living green walls and seasonal flora filter the morning sun
+                while antique copper lever espresso machines extract single-origin sweetness. A tranquil respite carved
+                directly into the city.
+              </p>
+
+              <!-- 3 Pillar Stats -->
+              <div class="ethos-stats-grid">
+                <div class="stat-box">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Traceable Lots</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">40+</span>
+                  <span class="stat-label">Tropical Species</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">93°C</span>
+                  <span class="stat-label">Calibrated Pours</span>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2B. Team of 3 Baristas (Row of Cards with Generated Portrait Images) -->
+            <div class="team-section">
+              <div class="team-header-row">
+                <div>
+                  <span class="section-tag">The Human Touch</span>
+                  <h3 class="team-title">Meet Our Barista Guild</h3>
+                </div>
+                <span class="team-badge">3 Craft Artisans</span>
+              </div>
+
+              <div class="team-cards-row">
+
+                <!-- Barista 1: Elena -->
+                <article class="barista-card">
+                  <div class="barista-photo-frame">
+                    <img src="../../assets/images/team-elena.png" alt="Elena Rostova smiling in roastery apron">
+                    <span class="barista-role-badge">Co-founder</span>
+                  </div>
+                  <div class="barista-info">
+                    <h4 class="barista-name">Elena Rostova</h4>
+                    <p class="barista-title">Head Roaster &amp; Founder</p>
+                    <p class="barista-bio">
+                      Q-grader calibrated in Oaxaca micro-lots. Specializes in light floral roasts and honey-process beans.
+                    </p>
+                    <div class="barista-social">
+                      <span class="material-symbols-outlined">coffee</span>
+                      <span>Roast Master</span>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Barista 2: Mateo -->
+                <article class="barista-card">
+                  <div class="barista-photo-frame">
+                    <img src="../../assets/images/team-mateo.png" alt="Mateo Vargas pouring latte art">
+                    <span class="barista-role-badge">Sensory</span>
+                  </div>
+                  <div class="barista-info">
+                    <h4 class="barista-name">Mateo Vargas</h4>
+                    <p class="barista-title">Chief Sensory Alchemist</p>
+                    <p class="barista-bio">
+                      Water chemistry and extraction specialist. Dialed in Kyoto cold infusions and botanical cordials.
+                    </p>
+                    <div class="barista-social">
+                      <span class="material-symbols-outlined">water_drop</span>
+                      <span>Brew Dialing</span>
+                    </div>
+                  </div>
+                </article>
+
+                <!-- Barista 3: Chloe -->
+                <article class="barista-card">
+                  <div class="barista-photo-frame">
+                    <img src="../../assets/images/team-chloe.png" alt="Chloe Vance with botanical plants">
+                    <span class="barista-role-badge">Botanicals</span>
+                  </div>
+                  <div class="barista-info">
+                    <h4 class="barista-name">Chloe Vance</h4>
+                    <p class="barista-title">Lead Florist &amp; Events</p>
+                    <p class="barista-bio">
+                      Curates our living green walls, dried posies, and weekend acoustic botanical workshop series.
+                    </p>
+                    <div class="barista-social">
+                      <span class="material-symbols-outlined">yard</span>
+                      <span>Greenhouse</span>
+                    </div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+            <!-- 2C. Direct Contact Information Grid -->
+            <div class="contact-info-grid">
+              <div class="info-card">
+                <div class="info-icon-badge">
+                  <span class="material-symbols-outlined">location_on</span>
+                </div>
+                <div>
+                  <h4 class="info-title">Atelier Location</h4>
+                  <p class="info-text">142 Blossom St, Pearl District</p>
+                  <p class="info-sub">Portland, OR 97209</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon-badge">
+                  <span class="material-symbols-outlined">call</span>
+                </div>
+                <div>
+                  <h4 class="info-title">Telephone Dispatch</h4>
+                  <p class="info-text">(503) 555-0192</p>
+                  <p class="info-sub">Mon – Sun, 8am – 5pm</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon-badge">
+                  <span class="material-symbols-outlined">mail</span>
+                </div>
+                <div>
+                  <h4 class="info-title">Electronic Mail</h4>
+                  <p class="info-text">hello@brewandbloom.cafe</p>
+                  <p class="info-sub">Replies within 24 hours</p>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon-badge">
+                  <span class="material-symbols-outlined">calendar_month</span>
+                </div>
+                <div>
+                  <h4 class="info-title">Service Schedule</h4>
+                  <p class="info-text">Mon – Fri: 7am – 6pm</p>
+                  <p class="info-sub">Sat – Sun: 8am – 7pm</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 2D. Visual Map Location Frame -->
+            <div class="map-card">
+              <div class="map-frame">
+                <img src="../../assets/images/contact-map.png"
+                  alt="Architectural street map of Portland Pearl District with Brew &amp; Bloom cafe pin marker">
+                <div class="map-overlay-badge">
+                  <span class="material-symbols-outlined">near_me</span>
+                  <span>Pearl District • Streetcar Line 10</span>
+                </div>
+              </div>
+              <div class="map-caption">
+                <span class="material-symbols-outlined icon-pin">pin_drop</span>
+                <p>Located three blocks east of Tanner Springs Park. Bicycle racks and curbside electric parking available.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- ================= RIGHT COLUMN: Interactive Contact Form (5 Cols) ================= -->
+          <div class="right-form-col">
+            <div class="form-wrapper-card">
+
+              <div class="form-header">
+                <span class="form-eyebrow">Send a Dispatch</span>
+                <h2 class="form-title">Inquire or Say Hello</h2>
+                <p class="form-subtitle">
+                  We welcome table reservations, private event inquiries, workshop registrations, or notes on our beans.
+                </p>
+              </div>
+
+              <form id="contactForm" novalidate>
+
+                <!-- Full Name Field -->
+                <div class="form-group">
+                  <label for="contactName">Your Name <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon">person</span>
+                    <input class="input-field" id="contactName" name="name" type="text" placeholder="Julian Thorne" required>
+                  </div>
+                </div>
+
+                <!-- Email Address Field (With Live Validation Display) -->
+                <div class="form-group">
+                  <div class="label-row">
+                    <label for="contactEmail">Email Address <span class="required-star">*</span></label>
+                    <span class="validation-status-pill" id="emailStatusPill">Format Check</span>
+                  </div>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon">mail</span>
+                    <input class="input-field valid-field" id="contactEmail" name="email" type="email"
+                      value="julian.thorne@botanicalcoffee.co" required>
+                    <span class="material-symbols-outlined check-icon">check_circle</span>
+                  </div>
+                  <p class="field-feedback-text text-valid" id="emailFeedback">
+                    <span class="material-symbols-outlined">check</span>
+                    <span>Valid email format ready for dispatch</span>
+                  </p>
+                </div>
+
+                <!-- Phone Field -->
+                <div class="form-group">
+                  <label for="contactPhone">Phone Number (Optional)</label>
+                  <div class="input-wrapper">
+                    <span class="material-symbols-outlined input-icon">phone</span>
+                    <input class="input-field" id="contactPhone" name="phone" type="tel" placeholder="(503) 555-0144">
+                  </div>
+                </div>
+
+                <!-- Subject / Reason for Inquiry (Select) -->
+                <div class="form-group">
+                  <label for="contactSubject">Inquiry Topic <span class="required-star">*</span></label>
+                  <div class="select-wrapper">
+                    <span class="material-symbols-outlined input-icon">category</span>
+                    <select class="select-field" id="contactSubject" name="subject" required>
+                      <option value="" disabled>Select an inquiry category</option>
+                      <option selected value="table">Table Reservation &amp; Dining</option>
+                      <option value="events">Private Event / Greenhouse Space Rental</option>
+                      <option value="workshops">Barista Workshop &amp; Cupping Sessions</option>
+                      <option value="wholesale">Wholesale Roasting &amp; Bean Dispensary</option>
+                      <option value="general">General Note &amp; Feedback</option>
+                    </select>
+                    <span class="material-symbols-outlined select-arrow">unfold_more</span>
+                  </div>
+                </div>
+
+                <!-- Preferred Reply Method -->
+                <div class="form-group">
+                  <span class="field-label-text">Preferred Response Channel</span>
+                  <div class="radio-row">
+                    <label class="radio-label">
+                      <input type="radio" name="replyMethod" value="email" checked>
+                      <span>Email</span>
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="replyMethod" value="phone">
+                      <span>Phone Call</span>
+                    </label>
+                    <label class="radio-label">
+                      <input type="radio" name="replyMethod" value="sms">
+                      <span>SMS Text</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <div class="label-row">
+                    <label for="contactMessage">Your Message <span class="required-star">*</span></label>
+                    <span class="char-count" id="charCount">0 / 500</span>
+                  </div>
+                  <textarea class="textarea-field" id="contactMessage" name="message" rows="4" maxlength="500"
+                    placeholder="Tell us about your requested dates, guest count, or coffee questions..." required>We would love to reserve a table for four in the greenhouse courtyard this Saturday morning around 10:00 AM.</textarea>
+                </div>
+
+                <!-- Consent Checkbox -->
+                <div class="consent-group">
+                  <label class="checkbox-label">
+                    <input type="checkbox" id="contactConsent" name="consent" required checked>
+                    <span>
+                      I agree to the <a href="#">privacy policy</a> and consent to receiving a reply from the Brew &amp; Bloom
+                      roastery team. <span class="required-star">*</span>
+                    </span>
+                  </label>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="form-actions-row">
+                  <button class="btn-clear" type="reset">
+                    <span class="material-symbols-outlined">restart_alt</span>
+                    <span>Clear</span>
+                  </button>
+                  <button class="btn-submit" type="submit">
+                    <span>Send Dispatch</span>
+                    <span class="material-symbols-outlined">send</span>
+                  </button>
+                </div>
+
+              </form>
+
+              <!-- Live Submission Success Card (Hidden by Default) -->
+              <div class="success-alert-card hidden" id="formSuccessAlert">
+                <div class="alert-icon">
+                  <span class="material-symbols-outlined">mark_email_read</span>
+                </div>
+                <div class="alert-text">
+                  <h4>Dispatch Received with Warmth!</h4>
+                  <p>Our barista team has logged your inquiry. Elena or Mateo will get back to you within 24 hours.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer (Standardized Across All 6 Pages) -->
+  <footer id="site-footer">
+    <div class="site-container">
+      <div class="footer-top-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-logo-row">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+              viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M12 2a4.5 4.5 0 0 0-4.5 4.5c0 3 4.5 5.5 4.5 5.5s4.5-2.5 4.5-5.5A4.5 4.5 0 0 0 12 2z"></path>
+              <path d="M12 22a4.5 4.5 0 0 1-4.5-4.5c0-3 4.5-5.5 4.5-5.5s4.5 2.5 4.5 5.5A4.5 4.5 0 0 1 12 22z"></path>
+              <path d="M2 12a4.5 4.5 0 0 0 4.5 4.5c3 0 5.5-4.5 5.5-4.5s-2.5-4.5-5.5-4.5A4.5 4.5 0 0 0 2 12z"></path>
+              <path d="M22 12a4.5 4.5 0 0 1-4.5 4.5c-3 0-5.5-4.5-5.5-4.5s2.5-4.5 5.5-4.5A4.5 4.5 0 0 1 22 12z"></path>
+            </svg>
+            <span class="footer-brand-name">Brew &amp; Bloom</span>
+          </div>
+          <p class="footer-brand-desc">
+            Artisanal roasts &amp; botanical moments in every cup.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <span class="material-symbols-outlined">photo_camera</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Journal">
+              <span class="material-symbols-outlined">rss_feed</span>
+            </a>
+            <a href="#" class="social-icon" aria-label="Share">
+              <span class="material-symbols-outlined">share</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Address Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Visit Our Atelier</h4>
+          <p class="footer-text">142 Blossom St, Portland, OR</p>
+          <p class="footer-text">United States</p>
+          <p class="footer-text footer-text-spacer">hello@brewandbloom.cafe</p>
+        </div>
+
+        <!-- Hours Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Opening Hours</h4>
+          <p class="footer-text">Mon – Fri: 7am – 6pm</p>
+          <p class="footer-text">Sat – Sun: 8am – 7pm</p>
+        </div>
+
+        <!-- Offerings Column -->
+        <div class="footer-col footer-col-info">
+          <h4 class="footer-heading">Specialty Offerings</h4>
+          <ul class="footer-links-list">
+            <li><a href="../media/media.html">Single Origin Pour-Overs</a></li>
+            <li><a href="../services/services.html">Seasonal Floral Subscriptions</a></li>
+            <li><a href="../services/services.html">Private Botanical Workshops</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <span>&copy; 2024 Brew &amp; Bloom. All rights reserved.</span>
+        <span>Crafted with warmth &amp; organic botanical reverence.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Light Vanilla Script for Interactive Hours Tray & Light/Dark Theme Toggle -->
+  <script>
+    // 1. Quick Hours Drawer Toggle
+    const toggleHoursBtn = document.getElementById('toggleHoursBtn');
+    const quickHoursTray = document.getElementById('quickHoursTray');
+    const hoursCaret = document.getElementById('hoursCaret');
+
+    if (toggleHoursBtn && quickHoursTray) {
+      toggleHoursBtn.addEventListener('click', () => {
+        const isExpanded = toggleHoursBtn.getAttribute('aria-expanded') === 'true';
+        toggleHoursBtn.setAttribute('aria-expanded', !isExpanded);
+        quickHoursTray.hidden = isExpanded;
+        hoursCaret.textContent = isExpanded ? 'expand_more' : 'expand_less';
+        toggleHoursBtn.classList.toggle('active', !isExpanded);
+      });
+    }
+
+    // 2. Light / Dark Theme Toggle
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const themeIcon = document.getElementById('themeIcon');
+
+    if (themeToggleBtn && themeIcon) {
+      themeToggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-theme');
+        const isDark = document.body.classList.contains('dark-theme');
+        themeIcon.textContent = isDark ? 'light_mode' : 'dark_mode';
+      });
+    }
+
+    // 3. Contact Form Submission Live Feedback
+    const contactForm = document.getElementById('contactForm');
+    const formSuccessAlert = document.getElementById('formSuccessAlert');
+
+    if (contactForm && formSuccessAlert) {
+      contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        formSuccessAlert.classList.remove('hidden');
+        formSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    }
+
+    // 4. Character count for textarea
+    const contactMessage = document.getElementById('contactMessage');
+    const charCount = document.getElementById('charCount');
+    if (contactMessage && charCount) {
+      charCount.textContent = `${contactMessage.value.length} / 500`;
+      contactMessage.addEventListener('input', () => {
+        charCount.textContent = `${contactMessage.value.length} / 500`;
+      });
+    }
+  </script>
+
+</body>
+
+</html>
