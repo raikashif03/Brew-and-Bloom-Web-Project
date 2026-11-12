@@ -8,7 +8,6 @@
     content="Contact Brew &amp; Bloom botanical coffee sanctuary in Portland. Visit our atelier, message our barista team, book space rentals, or inquire about wholesale beans.">
   <title>Contact &amp; Atelier — Brew &amp; Bloom</title>
 
-  <!-- Google Fonts & Material Symbols -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -18,13 +17,11 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     rel="stylesheet">
 
-  <!-- Page Stylesheet -->
   <link rel="stylesheet" href="contact.css">
 </head>
 
 <body>
 
-  <!-- Site Header (Requirement: Minimal Navbar with Bottom Border & Theme/Hours Toggle) -->
   <header id="site-header">
     <div class="site-container">
       <div class="header-inner">
@@ -44,7 +41,6 @@
           <span class="brand-name">Brew &amp; Bloom</span>
         </a>
 
-        <!-- Desktop Navigation -->
         <nav class="desktop-nav" aria-label="Main Navigation">
           <a class="nav-link" href="../home/home.html">Home</a>
           <a class="nav-link" href="../media/media.html">Media</a>
@@ -54,10 +50,8 @@
           <a class="nav-link active" aria-current="page" href="../contact/contact.html">Contact</a>
         </nav>
 
-        <!-- Header Actions: Quick Hours Drawer Trigger & Light/Dark Theme Toggle -->
         <div class="header-actions">
 
-          <!-- Requirement: Hours Toggle Button -->
           <button class="hours-toggle-btn" id="toggleHoursBtn" type="button" aria-expanded="false" aria-controls="quickHoursTray">
             <span class="material-symbols-outlined icon-schedule">schedule</span>
             <span class="hours-btn-label">Hours</span>
@@ -77,7 +71,6 @@
       </div>
     </div>
 
-    <!-- Quick Hours Collapsible Dropdown Tray -->
     <div class="quick-hours-tray" id="quickHoursTray" hidden>
       <div class="site-container">
         <div class="tray-inner">
@@ -103,7 +96,6 @@
       </div>
     </div>
 
-    <!-- Mobile Navigation Bar -->
     <nav class="mobile-nav-strip" aria-label="Mobile Navigation">
       <a class="nav-link" href="../home/home.html">Home</a>
       <a class="nav-link" href="../media/media.html">Media</a>
@@ -114,10 +106,8 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main id="main-content">
 
-    <!-- 1. Editorial Header Section -->
     <section id="contact-intro">
       <div class="site-container">
         <div class="intro-grid">
@@ -138,15 +128,12 @@
       </div>
     </section>
 
-    <!-- 2. Split Main Section: 2 Columns on Desktop (Left 7 Cols, Right 5 Cols) -->
     <section id="contact-split-section">
       <div class="site-container">
         <div class="split-layout">
 
-          <!-- ================= LEFT COLUMN: Story, Team & Atelier Info (7 Cols) ================= -->
           <div class="left-content-col">
 
-            <!-- 2A. Our Story & Regenerative Ethos Card -->
             <article class="story-sanctuary-card">
               <div class="eyebrow-tag">
                 <span class="material-symbols-outlined">spa</span>
@@ -164,7 +151,6 @@
                 directly into the city.
               </p>
 
-              <!-- 3 Pillar Stats -->
               <div class="ethos-stats-grid">
                 <div class="stat-box">
                   <span class="stat-number">100%</span>
@@ -181,7 +167,6 @@
               </div>
             </article>
 
-            <!-- 2B. Team of 3 Baristas (Row of Cards with Generated Portrait Images) -->
             <div class="team-section">
               <div class="team-header-row">
                 <div>
@@ -193,7 +178,6 @@
 
               <div class="team-cards-row">
 
-                <!-- Barista 1: Elena -->
                 <article class="barista-card">
                   <div class="barista-photo-frame">
                     <img src="../../assets/images/team-elena.png" alt="Elena Rostova smiling in roastery apron">
@@ -212,7 +196,7 @@
                   </div>
                 </article>
 
-                <!-- Barista 2: Mateo -->
+
                 <article class="barista-card">
                   <div class="barista-photo-frame">
                     <img src="../../assets/images/team-mateo.png" alt="Mateo Vargas pouring latte art">
@@ -231,7 +215,6 @@
                   </div>
                 </article>
 
-                <!-- Barista 3: Chloe -->
                 <article class="barista-card">
                   <div class="barista-photo-frame">
                     <img src="../../assets/images/team-chloe.png" alt="Chloe Vance with botanical plants">
@@ -253,7 +236,6 @@
               </div>
             </div>
 
-            <!-- 2C. Direct Contact Information Grid -->
             <div class="contact-info-grid">
               <div class="info-card">
                 <div class="info-icon-badge">
@@ -300,7 +282,6 @@
               </div>
             </div>
 
-            <!-- 2D. Visual Map Location Frame -->
             <div class="map-card">
               <div class="map-frame">
                 <img src="../../assets/images/contact-map.png"
@@ -318,7 +299,6 @@
 
           </div>
 
-          <!-- ================= RIGHT COLUMN: Interactive Contact Form (5 Cols) ================= -->
           <div class="right-form-col">
             <div class="form-wrapper-card">
 
@@ -332,7 +312,6 @@
 
               <form id="contactForm" novalidate>
 
-                <!-- Full Name Field -->
                 <div class="form-group">
                   <label for="contactName">Your Name <span class="required-star">*</span></label>
                   <div class="input-wrapper">
@@ -341,7 +320,6 @@
                   </div>
                 </div>
 
-                <!-- Email Address Field (With Live Validation Display) -->
                 <div class="form-group">
                   <div class="label-row">
                     <label for="contactEmail">Email Address <span class="required-star">*</span></label>
@@ -359,7 +337,6 @@
                   </p>
                 </div>
 
-                <!-- Phone Field -->
                 <div class="form-group">
                   <label for="contactPhone">Phone Number (Optional)</label>
                   <div class="input-wrapper">
@@ -368,7 +345,6 @@
                   </div>
                 </div>
 
-                <!-- Subject / Reason for Inquiry (Select) -->
                 <div class="form-group">
                   <label for="contactSubject">Inquiry Topic <span class="required-star">*</span></label>
                   <div class="select-wrapper">
@@ -385,7 +361,6 @@
                   </div>
                 </div>
 
-                <!-- Preferred Reply Method -->
                 <div class="form-group">
                   <span class="field-label-text">Preferred Response Channel</span>
                   <div class="radio-row">
@@ -404,7 +379,6 @@
                   </div>
                 </div>
 
-                <!-- Message Field -->
                 <div class="form-group">
                   <div class="label-row">
                     <label for="contactMessage">Your Message <span class="required-star">*</span></label>
@@ -414,7 +388,6 @@
                     placeholder="Tell us about your requested dates, guest count, or coffee questions..." required>We would love to reserve a table for four in the greenhouse courtyard this Saturday morning around 10:00 AM.</textarea>
                 </div>
 
-                <!-- Consent Checkbox -->
                 <div class="consent-group">
                   <label class="checkbox-label">
                     <input type="checkbox" id="contactConsent" name="consent" required checked>
@@ -425,7 +398,6 @@
                   </label>
                 </div>
 
-                <!-- Action Buttons -->
                 <div class="form-actions-row">
                   <button class="btn-clear" type="reset">
                     <span class="material-symbols-outlined">restart_alt</span>
@@ -439,7 +411,6 @@
 
               </form>
 
-              <!-- Live Submission Success Card (Hidden by Default) -->
               <div class="success-alert-card hidden" id="formSuccessAlert">
                 <div class="alert-icon">
                   <span class="material-symbols-outlined">mark_email_read</span>
@@ -459,7 +430,6 @@
 
   </main>
 
-  <!-- Site Footer (Standardized Across All 6 Pages) -->
   <footer id="site-footer">
     <div class="site-container">
       <div class="footer-top-grid">
@@ -493,7 +463,6 @@
           </div>
         </div>
 
-        <!-- Address Column -->
         <div class="footer-col footer-col-info">
           <h4 class="footer-heading">Visit Our Atelier</h4>
           <p class="footer-text">142 Blossom St, Portland, OR</p>
@@ -501,14 +470,12 @@
           <p class="footer-text footer-text-spacer">hello@brewandbloom.cafe</p>
         </div>
 
-        <!-- Hours Column -->
         <div class="footer-col footer-col-info">
           <h4 class="footer-heading">Opening Hours</h4>
           <p class="footer-text">Mon – Fri: 7am – 6pm</p>
           <p class="footer-text">Sat – Sun: 8am – 7pm</p>
         </div>
 
-        <!-- Offerings Column -->
         <div class="footer-col footer-col-info">
           <h4 class="footer-heading">Specialty Offerings</h4>
           <ul class="footer-links-list">
@@ -520,7 +487,6 @@
 
       </div>
 
-      <!-- Bottom Bar -->
       <div class="footer-bottom-bar">
         <span>&copy; 2024 Brew &amp; Bloom. All rights reserved.</span>
         <span>Crafted with warmth &amp; organic botanical reverence.</span>
@@ -529,57 +495,7 @@
     </div>
   </footer>
 
-  <!-- Light Vanilla Script for Interactive Hours Tray & Light/Dark Theme Toggle -->
-  <script>
-    // 1. Quick Hours Drawer Toggle
-    const toggleHoursBtn = document.getElementById('toggleHoursBtn');
-    const quickHoursTray = document.getElementById('quickHoursTray');
-    const hoursCaret = document.getElementById('hoursCaret');
 
-    if (toggleHoursBtn && quickHoursTray) {
-      toggleHoursBtn.addEventListener('click', () => {
-        const isExpanded = toggleHoursBtn.getAttribute('aria-expanded') === 'true';
-        toggleHoursBtn.setAttribute('aria-expanded', !isExpanded);
-        quickHoursTray.hidden = isExpanded;
-        hoursCaret.textContent = isExpanded ? 'expand_more' : 'expand_less';
-        toggleHoursBtn.classList.toggle('active', !isExpanded);
-      });
-    }
-
-    // 2. Light / Dark Theme Toggle
-    const themeToggleBtn = document.getElementById('themeToggleBtn');
-    const themeIcon = document.getElementById('themeIcon');
-
-    if (themeToggleBtn && themeIcon) {
-      themeToggleBtn.addEventListener('click', () => {
-        document.body.classList.toggle('dark-theme');
-        const isDark = document.body.classList.contains('dark-theme');
-        themeIcon.textContent = isDark ? 'light_mode' : 'dark_mode';
-      });
-    }
-
-    // 3. Contact Form Submission Live Feedback
-    const contactForm = document.getElementById('contactForm');
-    const formSuccessAlert = document.getElementById('formSuccessAlert');
-
-    if (contactForm && formSuccessAlert) {
-      contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        formSuccessAlert.classList.remove('hidden');
-        formSuccessAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      });
-    }
-
-    // 4. Character count for textarea
-    const contactMessage = document.getElementById('contactMessage');
-    const charCount = document.getElementById('charCount');
-    if (contactMessage && charCount) {
-      charCount.textContent = `${contactMessage.value.length} / 500`;
-      contactMessage.addEventListener('input', () => {
-        charCount.textContent = `${contactMessage.value.length} / 500`;
-      });
-    }
-  </script>
 
 </body>
 

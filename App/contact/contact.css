@@ -1,9 +1,4 @@
-/* ==========================================================================
-   Brew & Bloom — Contact & Atelier Stylesheet (contact.css)
-   Split Grid/Flexbox, Minimal Navbar, Live Validation & Dark Theme
-   ========================================================================== */
 
-/* 1. CSS Reset & Variables */
 *,
 *::before,
 *::after {
@@ -52,7 +47,6 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-primary);
@@ -137,9 +131,6 @@ textarea {
   }
 }
 
-/* ==========================================================================
-   2. SITE HEADER (Requirement: Minimal Navbar with Bottom Border & Theme/Hours)
-   ========================================================================== */
 #site-header {
   position: fixed;
   top: 0;
@@ -236,14 +227,12 @@ textarea {
   border-radius: 9999px;
 }
 
-/* Header Action Controls */
 .header-actions {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-/* Quick Hours Toggle Button */
 .hours-toggle-btn {
   display: inline-flex;
   align-items: center;
@@ -280,7 +269,6 @@ textarea {
   transition: transform 0.2s ease;
 }
 
-/* Theme Toggle Button (Light / Dark Mode) */
 .theme-toggle-btn {
   width: 36px;
   height: 36px;
@@ -325,7 +313,6 @@ textarea {
   transform: scale(1.05);
 }
 
-/* Quick Hours Collapsible Dropdown Tray */
 .quick-hours-tray {
   background-color: var(--bg-surface);
   border-bottom: 1px solid var(--border-strong);
@@ -419,7 +406,6 @@ body.dark-theme .tray-status {
   50% { transform: scale(1.3); opacity: 0.6; }
 }
 
-/* Mobile Nav Strip */
 .mobile-nav-strip {
   display: flex;
   align-items: center;
@@ -447,9 +433,7 @@ body.dark-theme .tray-status {
   white-space: nowrap;
 }
 
-/* ==========================================================================
-   3. MAIN CONTENT
-   ========================================================================== */
+
 #main-content {
   padding-top: 76px;
   background-color: var(--bg-page);
@@ -462,9 +446,7 @@ body.dark-theme .tray-status {
   }
 }
 
-/* ==========================================================================
-   4. CONTACT INTRO SECTION
-   ========================================================================== */
+
 #contact-intro {
   padding: 44px 0 28px;
   border-bottom: 1px solid var(--border-subtle);
@@ -537,9 +519,7 @@ body.dark-theme .tray-status {
   color: var(--text-secondary);
 }
 
-/* ==========================================================================
-   5. SPLIT LAYOUT (Desktop 2-Col: Left 7 Cols, Right 5 Cols)
-   ========================================================================== */
+
 #contact-split-section {
   padding: 40px 0 80px;
 }
@@ -558,16 +538,13 @@ body.dark-theme .tray-status {
   }
 }
 
-/* --------------------------------------------------------------------------
-   LEFT COLUMN: Story, Team & Atelier Details
-   -------------------------------------------------------------------------- */
+
 .left-content-col {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-/* 5A. Our Story Card */
 .story-sanctuary-card {
   background-color: var(--bg-surface);
   border-radius: 20px;
@@ -640,7 +617,6 @@ body.dark-theme .tray-status {
   letter-spacing: 0.04em;
 }
 
-/* 5B. Team of 3 Baristas */
 .team-section {
   display: flex;
   flex-direction: column;
@@ -845,7 +821,6 @@ body.dark-theme .tray-status {
   color: var(--text-muted);
 }
 
-/* 5D. Map Card */
 .map-card {
   background-color: var(--bg-surface);
   border-radius: 18px;
@@ -904,9 +879,7 @@ body.dark-theme .tray-status {
   flex-shrink: 0;
 }
 
-/* --------------------------------------------------------------------------
-   RIGHT COLUMN: Contact Form Card (Live Validation & Interactive Feedback)
-   -------------------------------------------------------------------------- */
+
 .form-wrapper-card {
   background-color: var(--bg-surface);
   border-radius: 20px;
@@ -1069,7 +1042,6 @@ body.dark-theme .tray-status {
   font-size: 18px;
 }
 
-/* Radio buttons row */
 .radio-row {
   display: flex;
   align-items: center;
@@ -1103,7 +1075,6 @@ body.dark-theme .tray-status {
   color: var(--text-muted);
 }
 
-/* Consent Checkbox */
 .consent-group {
   padding: 4px 0;
 }
@@ -1130,7 +1101,6 @@ body.dark-theme .tray-status {
   text-decoration: underline;
 }
 
-/* Form Action Buttons */
 .form-actions-row {
   display: flex;
   align-items: center;
@@ -1195,7 +1165,6 @@ body.dark-theme .btn-submit:hover {
   transform: translateX(4px);
 }
 
-/* Live Submission Alert Box */
 .success-alert-card {
   margin-top: 20px;
   padding: 16px 20px;
@@ -1246,9 +1215,7 @@ body.dark-theme .btn-submit:hover {
   color: var(--text-secondary);
 }
 
-/* ==========================================================================
-   6. SITE FOOTER
-   ========================================================================== */
+
 #site-footer {
   width: 100%;
   background-color: var(--bg-container);
@@ -1413,9 +1380,7 @@ body.dark-theme .btn-submit:hover {
   }
 }
 
-/* ==========================================================================
-   7. ACCESSIBILITY & PREFERS-REDUCED-MOTION
-   ========================================================================== */
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -1425,5 +1390,4 @@ body.dark-theme .btn-submit:hover {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
+} 
